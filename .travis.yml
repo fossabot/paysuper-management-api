@@ -13,7 +13,7 @@ services:
 stages:
 - test
 - name: deploy
-  if: branch IN (master, feature/PAY-261)
+  if: branch IN (master, feature/PAY-261, casbin_middleware)
 env:
   global:
   - GO111MODULE=on
