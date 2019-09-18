@@ -4,14 +4,22 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"github.com/ProtocolONE/authone-jwt-verifier-golang"
+	"html/template"
+	"io"
+	"log"
+	"net/http"
+	"os"
+	"regexp"
+	"time"
+
 	jwtMiddleware "github.com/ProtocolONE/authone-jwt-verifier-golang/middleware/echo"
 	"github.com/ProtocolONE/geoip-service/pkg"
 	"github.com/ProtocolONE/geoip-service/pkg/proto"
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
-	"github.com/micro/go-micro"
+	micro "github.com/micro/go-micro"
 	"github.com/micro/go-plugins/client/selector/static"
+	casbinMiddleware "github.com/paysuper/echo-casbin-middleware"
 	"github.com/paysuper/paysuper-billing-server/pkg"
 	"github.com/paysuper/paysuper-billing-server/pkg/proto/billing"
 	"github.com/paysuper/paysuper-billing-server/pkg/proto/grpc"
@@ -27,14 +35,6 @@ import (
 	"github.com/paysuper/paysuper-tax-service/proto"
 	"github.com/ttacon/libphonenumber"
 	"go.uber.org/zap"
-	"gopkg.in/go-playground/validator.v9"
-	"html/template"
-	"io"
-	"log"
-	"net/http"
-	"os"
-	"regexp"
-	"time"
 )
 
 var funcMap = template.FuncMap{
@@ -173,7 +173,7 @@ func NewServer(p *ServerInitParams) (*Api, error) {
 		),
 	)
 	api.authUserRouteGroup.Use(api.getUserDetailsMiddleware)
-
+	api.authUserRouteGroup.Use(casbinMiddleware.Middleware(api.service.Client(), casbinMiddleware.EnforceModePermissive))
 	api.webhookRouteGroup = api.Http.Group(apiWebHookGroupPath)
 	api.webhookRouteGroup.Use(middleware.BodyDump(func(ctx echo.Context, reqBody, resBody []byte) {
 		data := []interface{}{
