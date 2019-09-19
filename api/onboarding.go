@@ -93,7 +93,7 @@ func (api *Api) initOnboardingRoutes() (*Api, error) {
 	api.authUserRouteGroup.GET("/merchants/tariffs", route.getTariffRates)
 	api.authUserRouteGroup.POST("/merchants/:id/tariffs", route.setTariffRates)
 
-	api.Http.POST("/test", route.test)
+	api.Http.POST("/test/:merchant_id/:agreement_type", route.test)
 
 	return api, nil
 }

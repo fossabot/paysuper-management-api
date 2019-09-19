@@ -3,6 +3,7 @@ package api
 import (
 	"bytes"
 	"context"
+	"encoding/json"
 	"errors"
 	"fmt"
 	"github.com/globalsign/mgo/bson"
@@ -59,7 +60,23 @@ func (m *ProtobufBinder) Bind(i interface{}, ctx echo.Context) error {
 		return errors.New("some error")
 	}
 
-	err := jsonpb.Unmarshal(ctx.Request().Body, st)
+	params := make(map[string]string)
+	paramNames := ctx.ParamNames()
+	paramValues := ctx.ParamValues()
+
+	if len(paramNames) > 0 {
+		for k, v := range paramNames {
+			params[v] = paramValues[k]
+		}
+	}
+
+	b, err := json.Marshal(params)
+
+	if err != nil {
+		return err
+	}
+
+	err = jsonpb.Unmarshal(bytes.NewReader(b), st)
 
 	if err != nil {
 		return err
