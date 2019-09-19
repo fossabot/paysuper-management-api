@@ -3,8 +3,11 @@ package api
 import (
 	"bytes"
 	"context"
+	"errors"
 	"fmt"
 	"github.com/globalsign/mgo/bson"
+	"github.com/gogo/protobuf/jsonpb"
+	"github.com/gogo/protobuf/proto"
 	"github.com/labstack/echo/v4"
 	"github.com/paysuper/paysuper-billing-server/pkg"
 	"github.com/paysuper/paysuper-billing-server/pkg/proto/billing"
@@ -46,6 +49,23 @@ type ChangeMerchantDataRequestBinder struct {
 }
 type ChangeProjectRequestBinder struct {
 	*Api
+}
+type ProtobufBinder struct{}
+
+func (m *ProtobufBinder) Bind(i interface{}, ctx echo.Context) error {
+	st, ok := i.(proto.Message)
+
+	if !ok {
+		return errors.New("some error")
+	}
+
+	err := jsonpb.Unmarshal(ctx.Request().Body, st)
+
+	if err != nil {
+		return err
+	}
+
+	return nil
 }
 
 func (cb *OrderFormBinder) Bind(i interface{}, ctx echo.Context) (err error) {

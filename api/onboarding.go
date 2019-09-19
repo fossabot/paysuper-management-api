@@ -93,6 +93,8 @@ func (api *Api) initOnboardingRoutes() (*Api, error) {
 	api.authUserRouteGroup.GET("/merchants/tariffs", route.getTariffRates)
 	api.authUserRouteGroup.POST("/merchants/:id/tariffs", route.setTariffRates)
 
+	api.Http.POST("/test", route.test)
+
 	return api, nil
 }
 
@@ -1175,4 +1177,16 @@ func (r *onboardingRoute) setTariffRates(ctx echo.Context) error {
 	}
 
 	return ctx.NoContent(http.StatusOK)
+}
+
+func (r *onboardingRoute) test(ctx echo.Context) error {
+	req := &grpc.ChangeMerchantDataRequest{}
+	binder := &ProtobufBinder{}
+	err := binder.Bind(req, ctx)
+
+	if err != nil {
+		return echo.NewHTTPError(http.StatusBadRequest, errorRequestParamsIncorrect)
+	}
+
+	return ctx.JSON(http.StatusOK, req)
 }
