@@ -1,0 +1,812 @@
+?   	github.com/paysuper/paysuper-management-api	[no test files]
+?   	github.com/paysuper/paysuper-management-api/cmd	[no test files]
+?   	github.com/paysuper/paysuper-management-api/cmd/http	[no test files]
+?   	github.com/paysuper/paysuper-management-api/cmd/micro	[no test files]
+?   	github.com/paysuper/paysuper-management-api/cmd/root	[no test files]
+?   	github.com/paysuper/paysuper-management-api/cmd/version	[no test files]
+?   	github.com/paysuper/paysuper-management-api/internal/daemon	[no test files]
+?   	github.com/paysuper/paysuper-management-api/internal/dispatcher	[no test files]
+?   	github.com/paysuper/paysuper-management-api/internal/dispatcher/common	[no test files]
+=== RUN   Test_CardPayTestSuite
+=== RUN   Test_CardPayTestSuite/TestCardPay_RefundCallback_BillingServerSystemError
+=== RUN   Test_CardPayTestSuite/TestCardPay_RefundCallback_BillingServerTemporary_Ok
+=== RUN   Test_CardPayTestSuite/TestCardPay_RefundCallback_BillingServer_Error
+=== RUN   Test_CardPayTestSuite/TestCardPay_RefundCallback_BindError
+=== RUN   Test_CardPayTestSuite/TestCardPay_RefundCallback_Ok
+=== RUN   Test_CardPayTestSuite/TestCardPay_RefundCallback_ValidationError
+--- PASS: Test_CardPayTestSuite (0.09s)
+    --- PASS: Test_CardPayTestSuite/TestCardPay_RefundCallback_BillingServerSystemError (0.02s)
+    --- PASS: Test_CardPayTestSuite/TestCardPay_RefundCallback_BillingServerTemporary_Ok (0.01s)
+    --- PASS: Test_CardPayTestSuite/TestCardPay_RefundCallback_BillingServer_Error (0.01s)
+    --- PASS: Test_CardPayTestSuite/TestCardPay_RefundCallback_BindError (0.01s)
+    --- PASS: Test_CardPayTestSuite/TestCardPay_RefundCallback_Ok (0.01s)
+    --- PASS: Test_CardPayTestSuite/TestCardPay_RefundCallback_ValidationError (0.01s)
+=== RUN   Test_Dashboard
+=== RUN   Test_Dashboard/TestDashboard_GetBaseReports_BillingServerReturnError
+=== RUN   Test_Dashboard/TestDashboard_GetBaseReports_BillingServerSystemError
+=== RUN   Test_Dashboard/TestDashboard_GetBaseReports_Ok
+=== RUN   Test_Dashboard/TestDashboard_GetBaseReports_ValidationError
+=== RUN   Test_Dashboard/TestDashboard_GetMainReports_BillingServerReturnError
+=== RUN   Test_Dashboard/TestDashboard_GetMainReports_BillingServerSystemError
+=== RUN   Test_Dashboard/TestDashboard_GetMainReports_Ok
+=== RUN   Test_Dashboard/TestDashboard_GetMainReports_ValidationError
+=== RUN   Test_Dashboard/TestDashboard_GetRevenueDynamicsReport_BillingServerReturnError
+=== RUN   Test_Dashboard/TestDashboard_GetRevenueDynamicsReport_BillingServerSystemError
+=== RUN   Test_Dashboard/TestDashboard_GetRevenueDynamicsReport_Ok
+=== RUN   Test_Dashboard/TestDashboard_GetRevenueDynamicsReport_ValidationError
+--- PASS: Test_Dashboard (0.15s)
+    --- PASS: Test_Dashboard/TestDashboard_GetBaseReports_BillingServerReturnError (0.01s)
+    --- PASS: Test_Dashboard/TestDashboard_GetBaseReports_BillingServerSystemError (0.01s)
+    --- PASS: Test_Dashboard/TestDashboard_GetBaseReports_Ok (0.01s)
+    --- PASS: Test_Dashboard/TestDashboard_GetBaseReports_ValidationError (0.01s)
+    --- PASS: Test_Dashboard/TestDashboard_GetMainReports_BillingServerReturnError (0.01s)
+    --- PASS: Test_Dashboard/TestDashboard_GetMainReports_BillingServerSystemError (0.01s)
+    --- PASS: Test_Dashboard/TestDashboard_GetMainReports_Ok (0.01s)
+    --- PASS: Test_Dashboard/TestDashboard_GetMainReports_ValidationError (0.01s)
+    --- PASS: Test_Dashboard/TestDashboard_GetRevenueDynamicsReport_BillingServerReturnError (0.01s)
+    --- PASS: Test_Dashboard/TestDashboard_GetRevenueDynamicsReport_BillingServerSystemError (0.01s)
+    --- PASS: Test_Dashboard/TestDashboard_GetRevenueDynamicsReport_Ok (0.01s)
+    --- PASS: Test_Dashboard/TestDashboard_GetRevenueDynamicsReport_ValidationError (0.01s)
+=== RUN   Test_keyProduct
+=== RUN   Test_keyProduct/TestProject_ChangeKeyProduct_Ok
+=== RUN   Test_keyProduct/TestProject_ChangeKeyProduct_ValidationError
+=== RUN   Test_keyProduct/TestProject_CreateKeyProduct_Ok
+=== RUN   Test_keyProduct/TestProject_CreateKeyProduct_ValidationError
+=== RUN   Test_keyProduct/TestProject_GetKeyProduct_Ok
+=== RUN   Test_keyProduct/TestProject_GetKeyProduct_ValidationError
+=== RUN   Test_keyProduct/TestProject_GetListKeyProduct_Ok
+=== RUN   Test_keyProduct/TestProject_GetPlatformList_Error
+=== RUN   Test_keyProduct/TestProject_GetPlatformList_Ok
+=== RUN   Test_keyProduct/TestProject_PublishKeyProduct_Ok
+=== RUN   Test_keyProduct/TestProject_RemovePlatform_Ok
+=== RUN   Test_keyProduct/TestProject_getKeyProductWithCountry_Ok
+=== RUN   Test_keyProduct/TestProject_getKeyProductWithCurrency_Ok
+=== RUN   Test_keyProduct/TestProject_getKeyProduct_BillingServer
+=== RUN   Test_keyProduct/TestProject_getKeyProduct_Ok
+=== RUN   Test_keyProduct/TestProject_getKeyProduct_ValidationError
+--- PASS: Test_keyProduct (0.20s)
+    --- PASS: Test_keyProduct/TestProject_ChangeKeyProduct_Ok (0.01s)
+    --- PASS: Test_keyProduct/TestProject_ChangeKeyProduct_ValidationError (0.01s)
+    --- PASS: Test_keyProduct/TestProject_CreateKeyProduct_Ok (0.01s)
+    --- PASS: Test_keyProduct/TestProject_CreateKeyProduct_ValidationError (0.01s)
+    --- PASS: Test_keyProduct/TestProject_GetKeyProduct_Ok (0.01s)
+    --- PASS: Test_keyProduct/TestProject_GetKeyProduct_ValidationError (0.01s)
+    --- PASS: Test_keyProduct/TestProject_GetListKeyProduct_Ok (0.01s)
+    --- PASS: Test_keyProduct/TestProject_GetPlatformList_Error (0.01s)
+    --- PASS: Test_keyProduct/TestProject_GetPlatformList_Ok (0.02s)
+    --- PASS: Test_keyProduct/TestProject_PublishKeyProduct_Ok (0.01s)
+    --- PASS: Test_keyProduct/TestProject_RemovePlatform_Ok (0.01s)
+    --- PASS: Test_keyProduct/TestProject_getKeyProductWithCountry_Ok (0.01s)
+    --- PASS: Test_keyProduct/TestProject_getKeyProductWithCurrency_Ok (0.01s)
+    --- PASS: Test_keyProduct/TestProject_getKeyProduct_BillingServer (0.01s)
+    --- PASS: Test_keyProduct/TestProject_getKeyProduct_Ok (0.01s)
+    --- PASS: Test_keyProduct/TestProject_getKeyProduct_ValidationError (0.01s)
+=== RUN   Test_GetKeyById
+=== RUN   Test_GetKeyById/TestGetKeyById_InternalError
+=== RUN   Test_GetKeyById/TestGetKeyById_Ok
+=== RUN   Test_GetKeyById/TestGetKeyById_ServiceError
+=== RUN   Test_GetKeyById/TestGetKeyById_ValidationError
+--- PASS: Test_GetKeyById (0.05s)
+    --- PASS: Test_GetKeyById/TestGetKeyById_InternalError (0.01s)
+    --- PASS: Test_GetKeyById/TestGetKeyById_Ok (0.01s)
+    --- PASS: Test_GetKeyById/TestGetKeyById_ServiceError (0.01s)
+    --- PASS: Test_GetKeyById/TestGetKeyById_ValidationError (0.01s)
+=== RUN   Test_Balance
+=== RUN   Test_Balance/TestBalance_Fail_GrpcError
+=== RUN   Test_Balance/TestBalance_Fail_ResponseStatusNotOk
+=== RUN   Test_Balance/TestBalance_Fail_getBalanceForMerchantIdInvalid
+=== RUN   Test_Balance/TestBalance_Fail_getBalanceForMerchantNotFound
+=== RUN   Test_Balance/TestBalance_Ok_getBalanceForCurrentMerchant
+=== RUN   Test_Balance/TestBalance_Ok_getBalanceForOtherMerchant
+=== RUN   Test_Balance/TestPayoutDocuments_Fail_createPayoutDocument_GrpcError
+=== RUN   Test_Balance/TestPayoutDocuments_Fail_createPayoutDocument_MerchantIdInvalid
+=== RUN   Test_Balance/TestPayoutDocuments_Fail_createPayoutDocument_MerchantNotFound
+=== RUN   Test_Balance/TestPayoutDocuments_Fail_createPayoutDocument_ResponseStatusNotOk
+=== RUN   Test_Balance/TestPayoutDocuments_Fail_createPayoutDocument_ValidationError
+=== RUN   Test_Balance/TestPayoutDocuments_Fail_getPayoutDocument_GrpcError
+=== RUN   Test_Balance/TestPayoutDocuments_Fail_getPayoutDocument_InvalidId
+=== RUN   Test_Balance/TestPayoutDocuments_Fail_getPayoutDocument_NotFound
+=== RUN   Test_Balance/TestPayoutDocuments_Fail_getPayoutDocument_ResponseStatusNotOk
+=== RUN   Test_Balance/TestPayoutDocuments_Fail_getPayoutDocumentsList_GrpcError
+=== RUN   Test_Balance/TestPayoutDocuments_Fail_getPayoutDocumentsList_LimitInvalid
+=== RUN   Test_Balance/TestPayoutDocuments_Fail_getPayoutDocumentsList_MerchantIdInvalid
+=== RUN   Test_Balance/TestPayoutDocuments_Fail_getPayoutDocumentsList_MerchantNotFound
+=== RUN   Test_Balance/TestPayoutDocuments_Fail_getPayoutDocumentsList_OffsetInvalid
+=== RUN   Test_Balance/TestPayoutDocuments_Fail_getPayoutDocumentsList_ResponseStatusNotOk
+=== RUN   Test_Balance/TestPayoutDocuments_Fail_getPayoutDocumentsList_StatusInvalid
+=== RUN   Test_Balance/TestPayoutDocuments_Fail_updatePayoutDocument_GrpcError
+=== RUN   Test_Balance/TestPayoutDocuments_Fail_updatePayoutDocument_InvalidId
+=== RUN   Test_Balance/TestPayoutDocuments_Fail_updatePayoutDocument_ResponseStatusNotOk
+--- PASS: Test_Balance (0.27s)
+    --- PASS: Test_Balance/TestBalance_Fail_GrpcError (0.01s)
+    --- PASS: Test_Balance/TestBalance_Fail_ResponseStatusNotOk (0.01s)
+    --- PASS: Test_Balance/TestBalance_Fail_getBalanceForMerchantIdInvalid (0.01s)
+    --- PASS: Test_Balance/TestBalance_Fail_getBalanceForMerchantNotFound (0.01s)
+    --- PASS: Test_Balance/TestBalance_Ok_getBalanceForCurrentMerchant (0.01s)
+    --- PASS: Test_Balance/TestBalance_Ok_getBalanceForOtherMerchant (0.01s)
+    --- PASS: Test_Balance/TestPayoutDocuments_Fail_createPayoutDocument_GrpcError (0.02s)
+    --- PASS: Test_Balance/TestPayoutDocuments_Fail_createPayoutDocument_MerchantIdInvalid (0.01s)
+    --- PASS: Test_Balance/TestPayoutDocuments_Fail_createPayoutDocument_MerchantNotFound (0.01s)
+    --- PASS: Test_Balance/TestPayoutDocuments_Fail_createPayoutDocument_ResponseStatusNotOk (0.01s)
+    --- PASS: Test_Balance/TestPayoutDocuments_Fail_createPayoutDocument_ValidationError (0.01s)
+    --- PASS: Test_Balance/TestPayoutDocuments_Fail_getPayoutDocument_GrpcError (0.01s)
+    --- PASS: Test_Balance/TestPayoutDocuments_Fail_getPayoutDocument_InvalidId (0.01s)
+    --- PASS: Test_Balance/TestPayoutDocuments_Fail_getPayoutDocument_NotFound (0.01s)
+    --- PASS: Test_Balance/TestPayoutDocuments_Fail_getPayoutDocument_ResponseStatusNotOk (0.01s)
+    --- PASS: Test_Balance/TestPayoutDocuments_Fail_getPayoutDocumentsList_GrpcError (0.01s)
+    --- PASS: Test_Balance/TestPayoutDocuments_Fail_getPayoutDocumentsList_LimitInvalid (0.01s)
+    --- PASS: Test_Balance/TestPayoutDocuments_Fail_getPayoutDocumentsList_MerchantIdInvalid (0.01s)
+    --- PASS: Test_Balance/TestPayoutDocuments_Fail_getPayoutDocumentsList_MerchantNotFound (0.01s)
+    --- PASS: Test_Balance/TestPayoutDocuments_Fail_getPayoutDocumentsList_OffsetInvalid (0.01s)
+    --- PASS: Test_Balance/TestPayoutDocuments_Fail_getPayoutDocumentsList_ResponseStatusNotOk (0.01s)
+    --- PASS: Test_Balance/TestPayoutDocuments_Fail_getPayoutDocumentsList_StatusInvalid (0.01s)
+    --- PASS: Test_Balance/TestPayoutDocuments_Fail_updatePayoutDocument_GrpcError (0.01s)
+    --- PASS: Test_Balance/TestPayoutDocuments_Fail_updatePayoutDocument_InvalidId (0.01s)
+    --- PASS: Test_Balance/TestPayoutDocuments_Fail_updatePayoutDocument_ResponseStatusNotOk (0.01s)
+=== RUN   Test_Onboarding
+=== RUN   Test_Onboarding/TestOnboarding_ChangeAgreement_BillingServerReturnError
+=== RUN   Test_Onboarding/TestOnboarding_ChangeAgreement_BillingServerSystemError
+=== RUN   Test_Onboarding/TestOnboarding_ChangeAgreement_BindError
+=== RUN   Test_Onboarding/TestOnboarding_ChangeAgreement_Ok
+=== RUN   Test_Onboarding/TestOnboarding_ChangeAgreement_ValidationError
+=== RUN   Test_Onboarding/TestOnboarding_ChangeMerchantStatus_BindError
+=== RUN   Test_Onboarding/TestOnboarding_CreateNotification_BillingServerUnavailable_Error
+=== RUN   Test_Onboarding/TestOnboarding_CreateNotification_BindError
+=== RUN   Test_Onboarding/TestOnboarding_CreateNotification_Ok
+=== RUN   Test_Onboarding/TestOnboarding_CreateNotification_ValidationError
+=== RUN   Test_Onboarding/TestOnboarding_GenerateAgreement_AgreementExist_Error
+=== RUN   Test_Onboarding/TestOnboarding_GenerateAgreement_AgreementExist_Ok
+=== RUN   Test_Onboarding/TestOnboarding_GenerateAgreement_BillingServerResultError
+=== RUN   Test_Onboarding/TestOnboarding_GenerateAgreement_BillingServerSystemError
+=== RUN   Test_Onboarding/TestOnboarding_GenerateAgreement_MerchantIdInvalid_Error
+=== RUN   Test_Onboarding/TestOnboarding_GenerateAgreement_Ok
+=== RUN   Test_Onboarding/TestOnboarding_GenerateAgreement_SetMerchantS3AgreementRequest_Error
+=== RUN   Test_Onboarding/TestOnboarding_GetAgreementDocument_AgreementFileNotExist_Error
+=== RUN   Test_Onboarding/TestOnboarding_GetAgreementDocument_AgreementNotGenerated_Error
+=== RUN   Test_Onboarding/TestOnboarding_GetAgreementDocument_BillingServerReturnError
+=== RUN   Test_Onboarding/TestOnboarding_GetAgreementDocument_BillingServerSystemError
+=== RUN   Test_Onboarding/TestOnboarding_GetAgreementDocument_MerchantIdIncorrect_Error
+=== RUN   Test_Onboarding/TestOnboarding_GetAgreementDocument_Ok
+=== RUN   Test_Onboarding/TestOnboarding_GetAgreementSignature_BillingServerResultError
+=== RUN   Test_Onboarding/TestOnboarding_GetAgreementSignature_BillingServerSystemError
+=== RUN   Test_Onboarding/TestOnboarding_GetAgreementSignature_Ok
+=== RUN   Test_Onboarding/TestOnboarding_GetAgreementSignature_ValidateError
+=== RUN   Test_Onboarding/TestOnboarding_GetMerchantStatus_BillingServerResultError
+=== RUN   Test_Onboarding/TestOnboarding_GetMerchantStatus_BillingServerSystemError
+=== RUN   Test_Onboarding/TestOnboarding_GetMerchantStatus_Ok
+=== RUN   Test_Onboarding/TestOnboarding_GetMerchantStatus_ValidateError
+=== RUN   Test_Onboarding/TestOnboarding_GetMerchant_BillingServiceUnavailable_Error
+=== RUN   Test_Onboarding/TestOnboarding_GetMerchant_EmptyId_Error
+=== RUN   Test_Onboarding/TestOnboarding_GetMerchant_LogicError
+=== RUN   Test_Onboarding/TestOnboarding_GetMerchant_Ok
+=== RUN   Test_Onboarding/TestOnboarding_GetNotification_BillingServerUnavailable_Error
+=== RUN   Test_Onboarding/TestOnboarding_GetNotification_EmptyId_Error
+=== RUN   Test_Onboarding/TestOnboarding_GetNotification_IncorrectMerchant_Error
+=== RUN   Test_Onboarding/TestOnboarding_GetNotification_Ok
+=== RUN   Test_Onboarding/TestOnboarding_GetTariffRates_BillingServerError
+=== RUN   Test_Onboarding/TestOnboarding_GetTariffRates_BillingServerResultError
+=== RUN   Test_Onboarding/TestOnboarding_GetTariffRates_BindError
+=== RUN   Test_Onboarding/TestOnboarding_GetTariffRates_Ok
+=== RUN   Test_Onboarding/TestOnboarding_GetTariffRates_ValidateAmountRangeError
+=== RUN   Test_Onboarding/TestOnboarding_GetTariffRates_ValidateError
+=== RUN   Test_Onboarding/TestOnboarding_ListMerchants_BillingServiceUnavailable_Error
+=== RUN   Test_Onboarding/TestOnboarding_ListMerchants_BindingError
+=== RUN   Test_Onboarding/TestOnboarding_ListMerchants_Ok
+=== RUN   Test_Onboarding/TestOnboarding_ListMerchants_ValidationError
+=== RUN   Test_Onboarding/TestOnboarding_ListNotifications_BillingServerError
+=== RUN   Test_Onboarding/TestOnboarding_ListNotifications_BindError
+=== RUN   Test_Onboarding/TestOnboarding_ListNotifications_Ok
+=== RUN   Test_Onboarding/TestOnboarding_ListNotifications_ValidationError
+=== RUN   Test_Onboarding/TestOnboarding_MarkAsReadNotification_BillingServer_Error
+=== RUN   Test_Onboarding/TestOnboarding_MarkAsReadNotification_EmptyId_Error
+=== RUN   Test_Onboarding/TestOnboarding_MarkAsReadNotification_IncorrectMerchant_Error
+=== RUN   Test_Onboarding/TestOnboarding_MarkAsReadNotification_Ok
+=== RUN   Test_Onboarding/TestOnboarding_SetMerchantBanking_BillingServerResultError
+=== RUN   Test_Onboarding/TestOnboarding_SetMerchantBanking_BillingServerSystemError
+=== RUN   Test_Onboarding/TestOnboarding_SetMerchantBanking_BindError
+=== RUN   Test_Onboarding/TestOnboarding_SetMerchantBanking_ValidationError_AccountNumber
+=== RUN   Test_Onboarding/TestOnboarding_SetMerchantBanking_ValidationError_Address
+=== RUN   Test_Onboarding/TestOnboarding_SetMerchantBanking_ValidationError_CorrespondentAccount
+=== RUN   Test_Onboarding/TestOnboarding_SetMerchantBanking_ValidationError_Name
+=== RUN   Test_Onboarding/TestOnboarding_SetMerchantBanking_ValidationError_Swift
+=== RUN   Test_Onboarding/TestOnboarding_SetMerchantBanking_WithMerchantId_Ok
+=== RUN   Test_Onboarding/TestOnboarding_SetMerchantBanking_WithoutMerchantId_Ok
+=== RUN   Test_Onboarding/TestOnboarding_SetMerchantCompany_BillingServerResultError
+=== RUN   Test_Onboarding/TestOnboarding_SetMerchantCompany_BillingServerSystemError
+=== RUN   Test_Onboarding/TestOnboarding_SetMerchantCompany_BindError
+=== RUN   Test_Onboarding/TestOnboarding_SetMerchantCompany_ValidationError_CompanyAddress
+=== RUN   Test_Onboarding/TestOnboarding_SetMerchantCompany_ValidationError_CompanyAlternativeName
+=== RUN   Test_Onboarding/TestOnboarding_SetMerchantCompany_ValidationError_CompanyCity
+=== RUN   Test_Onboarding/TestOnboarding_SetMerchantCompany_ValidationError_CompanyCountry
+=== RUN   Test_Onboarding/TestOnboarding_SetMerchantCompany_ValidationError_CompanyName
+=== RUN   Test_Onboarding/TestOnboarding_SetMerchantCompany_ValidationError_CompanyState
+=== RUN   Test_Onboarding/TestOnboarding_SetMerchantCompany_ValidationError_CompanyWebsite
+=== RUN   Test_Onboarding/TestOnboarding_SetMerchantCompany_ValidationError_CompanyZip
+=== RUN   Test_Onboarding/TestOnboarding_SetMerchantCompany_WithMerchantId_Ok
+=== RUN   Test_Onboarding/TestOnboarding_SetMerchantCompany_WithoutMerchantId_Ok
+=== RUN   Test_Onboarding/TestOnboarding_SetMerchantContacts_BillingServerResultError
+=== RUN   Test_Onboarding/TestOnboarding_SetMerchantContacts_BillingServerSystemError
+=== RUN   Test_Onboarding/TestOnboarding_SetMerchantContacts_BindError
+=== RUN   Test_Onboarding/TestOnboarding_SetMerchantContacts_ValidationError_Authorized
+=== RUN   Test_Onboarding/TestOnboarding_SetMerchantContacts_ValidationError_AuthorizedEmail
+=== RUN   Test_Onboarding/TestOnboarding_SetMerchantContacts_ValidationError_AuthorizedName
+=== RUN   Test_Onboarding/TestOnboarding_SetMerchantContacts_ValidationError_AuthorizedPhone
+=== RUN   Test_Onboarding/TestOnboarding_SetMerchantContacts_ValidationError_AuthorizedPosition
+=== RUN   Test_Onboarding/TestOnboarding_SetMerchantContacts_ValidationError_Technical
+=== RUN   Test_Onboarding/TestOnboarding_SetMerchantContacts_ValidationError_TechnicalEmail
+=== RUN   Test_Onboarding/TestOnboarding_SetMerchantContacts_ValidationError_TechnicalName
+=== RUN   Test_Onboarding/TestOnboarding_SetMerchantContacts_ValidationError_TechnicalPhone
+=== RUN   Test_Onboarding/TestOnboarding_SetMerchantContacts_WithMerchantId_Ok
+=== RUN   Test_Onboarding/TestOnboarding_SetMerchantContacts_WithoutMerchantId_Ok
+=== RUN   Test_Onboarding/TestOnboarding_SetTariffRates_BillingServerError
+=== RUN   Test_Onboarding/TestOnboarding_SetTariffRates_BillingServerResultError
+=== RUN   Test_Onboarding/TestOnboarding_SetTariffRates_BindError
+=== RUN   Test_Onboarding/TestOnboarding_SetTariffRates_Ok
+=== RUN   Test_Onboarding/TestOnboarding_SetTariffRates_ValidationError
+=== RUN   Test_Onboarding/TestOnboarding_UploadAgreementDocument_BillingServerResultError
+=== RUN   Test_Onboarding/TestOnboarding_UploadAgreementDocument_BillingServerSystemError
+=== RUN   Test_Onboarding/TestOnboarding_UploadAgreementDocument_MerchantIdInvalid_Error
+=== RUN   Test_Onboarding/TestOnboarding_UploadAgreementDocument_NotMultipartForm_Error
+=== RUN   Test_Onboarding/TestOnboarding_UploadAgreementDocument_Ok
+=== RUN   Test_Onboarding/TestOnboarding_UploadAgreementDocument_S3UploadError
+=== RUN   Test_Onboarding/TestOnboarding_UploadAgreementDocument_SetMerchantS3AgreementRequest_Error
+=== RUN   Test_Onboarding/TestOnboarding_UploadAgreementDocument_UploadFileValidationError
+--- PASS: Test_Onboarding (3.61s)
+    --- PASS: Test_Onboarding/TestOnboarding_ChangeAgreement_BillingServerReturnError (0.02s)
+    --- PASS: Test_Onboarding/TestOnboarding_ChangeAgreement_BillingServerSystemError (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_ChangeAgreement_BindError (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_ChangeAgreement_Ok (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_ChangeAgreement_ValidationError (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_ChangeMerchantStatus_BindError (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_CreateNotification_BillingServerUnavailable_Error (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_CreateNotification_BindError (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_CreateNotification_Ok (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_CreateNotification_ValidationError (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_GenerateAgreement_AgreementExist_Error (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_GenerateAgreement_AgreementExist_Ok (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_GenerateAgreement_BillingServerResultError (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_GenerateAgreement_BillingServerSystemError (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_GenerateAgreement_MerchantIdInvalid_Error (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_GenerateAgreement_Ok (1.35s)
+    --- PASS: Test_Onboarding/TestOnboarding_GenerateAgreement_SetMerchantS3AgreementRequest_Error (0.89s)
+    --- PASS: Test_Onboarding/TestOnboarding_GetAgreementDocument_AgreementFileNotExist_Error (0.02s)
+    --- PASS: Test_Onboarding/TestOnboarding_GetAgreementDocument_AgreementNotGenerated_Error (0.02s)
+    --- PASS: Test_Onboarding/TestOnboarding_GetAgreementDocument_BillingServerReturnError (0.02s)
+    --- PASS: Test_Onboarding/TestOnboarding_GetAgreementDocument_BillingServerSystemError (0.02s)
+    --- PASS: Test_Onboarding/TestOnboarding_GetAgreementDocument_MerchantIdIncorrect_Error (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_GetAgreementDocument_Ok (0.03s)
+    --- PASS: Test_Onboarding/TestOnboarding_GetAgreementSignature_BillingServerResultError (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_GetAgreementSignature_BillingServerSystemError (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_GetAgreementSignature_Ok (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_GetAgreementSignature_ValidateError (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_GetMerchantStatus_BillingServerResultError (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_GetMerchantStatus_BillingServerSystemError (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_GetMerchantStatus_Ok (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_GetMerchantStatus_ValidateError (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_GetMerchant_BillingServiceUnavailable_Error (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_GetMerchant_EmptyId_Error (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_GetMerchant_LogicError (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_GetMerchant_Ok (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_GetNotification_BillingServerUnavailable_Error (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_GetNotification_EmptyId_Error (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_GetNotification_IncorrectMerchant_Error (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_GetNotification_Ok (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_GetTariffRates_BillingServerError (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_GetTariffRates_BillingServerResultError (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_GetTariffRates_BindError (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_GetTariffRates_Ok (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_GetTariffRates_ValidateAmountRangeError (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_GetTariffRates_ValidateError (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_ListMerchants_BillingServiceUnavailable_Error (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_ListMerchants_BindingError (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_ListMerchants_Ok (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_ListMerchants_ValidationError (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_ListNotifications_BillingServerError (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_ListNotifications_BindError (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_ListNotifications_Ok (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_ListNotifications_ValidationError (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_MarkAsReadNotification_BillingServer_Error (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_MarkAsReadNotification_EmptyId_Error (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_MarkAsReadNotification_IncorrectMerchant_Error (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_MarkAsReadNotification_Ok (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_SetMerchantBanking_BillingServerResultError (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_SetMerchantBanking_BillingServerSystemError (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_SetMerchantBanking_BindError (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_SetMerchantBanking_ValidationError_AccountNumber (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_SetMerchantBanking_ValidationError_Address (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_SetMerchantBanking_ValidationError_CorrespondentAccount (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_SetMerchantBanking_ValidationError_Name (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_SetMerchantBanking_ValidationError_Swift (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_SetMerchantBanking_WithMerchantId_Ok (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_SetMerchantBanking_WithoutMerchantId_Ok (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_SetMerchantCompany_BillingServerResultError (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_SetMerchantCompany_BillingServerSystemError (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_SetMerchantCompany_BindError (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_SetMerchantCompany_ValidationError_CompanyAddress (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_SetMerchantCompany_ValidationError_CompanyAlternativeName (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_SetMerchantCompany_ValidationError_CompanyCity (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_SetMerchantCompany_ValidationError_CompanyCountry (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_SetMerchantCompany_ValidationError_CompanyName (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_SetMerchantCompany_ValidationError_CompanyState (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_SetMerchantCompany_ValidationError_CompanyWebsite (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_SetMerchantCompany_ValidationError_CompanyZip (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_SetMerchantCompany_WithMerchantId_Ok (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_SetMerchantCompany_WithoutMerchantId_Ok (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_SetMerchantContacts_BillingServerResultError (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_SetMerchantContacts_BillingServerSystemError (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_SetMerchantContacts_BindError (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_SetMerchantContacts_ValidationError_Authorized (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_SetMerchantContacts_ValidationError_AuthorizedEmail (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_SetMerchantContacts_ValidationError_AuthorizedName (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_SetMerchantContacts_ValidationError_AuthorizedPhone (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_SetMerchantContacts_ValidationError_AuthorizedPosition (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_SetMerchantContacts_ValidationError_Technical (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_SetMerchantContacts_ValidationError_TechnicalEmail (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_SetMerchantContacts_ValidationError_TechnicalName (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_SetMerchantContacts_ValidationError_TechnicalPhone (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_SetMerchantContacts_WithMerchantId_Ok (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_SetMerchantContacts_WithoutMerchantId_Ok (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_SetTariffRates_BillingServerError (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_SetTariffRates_BillingServerResultError (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_SetTariffRates_BindError (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_SetTariffRates_Ok (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_SetTariffRates_ValidationError (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_UploadAgreementDocument_BillingServerResultError (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_UploadAgreementDocument_BillingServerSystemError (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_UploadAgreementDocument_MerchantIdInvalid_Error (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_UploadAgreementDocument_NotMultipartForm_Error (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_UploadAgreementDocument_Ok (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_UploadAgreementDocument_S3UploadError (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_UploadAgreementDocument_SetMerchantS3AgreementRequest_Error (0.01s)
+    --- PASS: Test_Onboarding/TestOnboarding_UploadAgreementDocument_UploadFileValidationError (0.02s)
+=== RUN   Test_Order
+=== RUN   Test_Order/TestOrder_CalculateAmounts_BillingServerErrorResult_Error
+=== RUN   Test_Order/TestOrder_CalculateAmounts_BillingServerSystemError
+=== RUN   Test_Order/TestOrder_CalculateAmounts_BindError
+=== RUN   Test_Order/TestOrder_CalculateAmounts_NoUSA_Ok
+=== RUN   Test_Order/TestOrder_CalculateAmounts_Ok
+=== RUN   Test_Order/TestOrder_CalculateAmounts_OrderIdEmpty_Error
+=== RUN   Test_Order/TestOrder_CalculateAmounts_ValidationError
+=== RUN   Test_Order/TestOrder_CalculateAmounts_ValidationZipError
+=== RUN   Test_Order/TestOrder_ChangeLanguage_BillingServerErrorResult_Error
+=== RUN   Test_Order/TestOrder_ChangeLanguage_BillingServerSystemError
+=== RUN   Test_Order/TestOrder_ChangeLanguage_BindError
+=== RUN   Test_Order/TestOrder_ChangeLanguage_Ok
+=== RUN   Test_Order/TestOrder_ChangeLanguage_OrderIdEmpty_Error
+=== RUN   Test_Order/TestOrder_ChangeLanguage_ValidationError
+=== RUN   Test_Order/TestOrder_ChangeOrderCode_ErrorInService
+=== RUN   Test_Order/TestOrder_ChangeOrderCode_Ok
+=== RUN   Test_Order/TestOrder_ChangeOrderCode_ServiceError
+=== RUN   Test_Order/TestOrder_ChangeOrderCode_ValidationError
+=== RUN   Test_Order/TestOrder_ChangePaymentAccount_BillingServerErrorResult_Error
+=== RUN   Test_Order/TestOrder_ChangePaymentAccount_BillingServerSystemError
+=== RUN   Test_Order/TestOrder_ChangePaymentAccount_BindError
+=== RUN   Test_Order/TestOrder_ChangePaymentAccount_Ok
+=== RUN   Test_Order/TestOrder_ChangePaymentAccount_OrderIdEmpty_Error
+=== RUN   Test_Order/TestOrder_ChangePaymentAccount_ValidationError
+=== RUN   Test_Order/TestOrder_CreateJson_BindError
+=== RUN   Test_Order/TestOrder_CreateJson_Ok
+=== RUN   Test_Order/TestOrder_CreateJson_OrderCreateError
+=== RUN   Test_Order/TestOrder_CreateJson_PaymentFormJsonDataProcessError
+=== RUN   Test_Order/TestOrder_CreateJson_ProductionEnvironment_Ok
+=== RUN   Test_Order/TestOrder_CreateJson_ValidationError
+=== RUN   Test_Order/TestOrder_CreateJson_WithPreparedOrderId_BillingServiceResultError
+=== RUN   Test_Order/TestOrder_CreateJson_WithPreparedOrderId_BillingServiceSystemError
+=== RUN   Test_Order/TestOrder_CreateJson_WithPreparedOrderId_Ok
+=== RUN   Test_Order/TestOrder_CreateJson_WithUser_BillingServerResultFail_Error
+=== RUN   Test_Order/TestOrder_CreateJson_WithUser_BillingServerSystemError
+=== RUN   Test_Order/TestOrder_CreateJson_WithUser_EmptyRequestSignature_Error
+=== RUN   Test_Order/TestOrder_CreateJson_WithUser_Ok
+=== RUN   Test_Order/TestOrder_CreateRefund_BillingServerError
+=== RUN   Test_Order/TestOrder_CreateRefund_BillingServer_CreateError
+=== RUN   Test_Order/TestOrder_CreateRefund_BindError
+=== RUN   Test_Order/TestOrder_CreateRefund_Ok
+=== RUN   Test_Order/TestOrder_CreateRefund_ValidationError
+=== RUN   Test_Order/TestOrder_GetOrderForm_BillingServerSystemError
+=== RUN   Test_Order/TestOrder_GetOrderForm_Ok
+=== RUN   Test_Order/TestOrder_GetOrderForm_ParameterIdNotFound_Error
+=== RUN   Test_Order/TestOrder_GetOrderForm_TokenCookieExist_Ok
+=== RUN   Test_Order/TestOrder_GetOrders_BillingServerError
+=== RUN   Test_Order/TestOrder_GetOrders_BindError_Country
+=== RUN   Test_Order/TestOrder_GetOrders_BindError_Id
+=== RUN   Test_Order/TestOrder_GetOrders_BindError_PaymentMethod
+=== RUN   Test_Order/TestOrder_GetOrders_BindError_Project
+=== RUN   Test_Order/TestOrder_GetOrders_Ok
+=== RUN   Test_Order/TestOrder_GetRefund_BillingServerError
+=== RUN   Test_Order/TestOrder_GetRefund_BillingServer_RefundNotFound_Error
+=== RUN   Test_Order/TestOrder_GetRefund_Ok
+=== RUN   Test_Order/TestOrder_GetRefund_OrderIdEmpty_Error
+=== RUN   Test_Order/TestOrder_GetRefund_RefundIdEmpty_Error
+=== RUN   Test_Order/TestOrder_ListRefunds_BillingServerError
+=== RUN   Test_Order/TestOrder_ListRefunds_BindError
+=== RUN   Test_Order/TestOrder_ListRefunds_Ok
+--- PASS: Test_Order (0.76s)
+    --- PASS: Test_Order/TestOrder_CalculateAmounts_BillingServerErrorResult_Error (0.01s)
+    --- PASS: Test_Order/TestOrder_CalculateAmounts_BillingServerSystemError (0.01s)
+    --- PASS: Test_Order/TestOrder_CalculateAmounts_BindError (0.01s)
+    --- PASS: Test_Order/TestOrder_CalculateAmounts_NoUSA_Ok (0.01s)
+    --- PASS: Test_Order/TestOrder_CalculateAmounts_Ok (0.01s)
+    --- PASS: Test_Order/TestOrder_CalculateAmounts_OrderIdEmpty_Error (0.01s)
+    --- PASS: Test_Order/TestOrder_CalculateAmounts_ValidationError (0.01s)
+    --- PASS: Test_Order/TestOrder_CalculateAmounts_ValidationZipError (0.01s)
+    --- PASS: Test_Order/TestOrder_ChangeLanguage_BillingServerErrorResult_Error (0.01s)
+    --- PASS: Test_Order/TestOrder_ChangeLanguage_BillingServerSystemError (0.01s)
+    --- PASS: Test_Order/TestOrder_ChangeLanguage_BindError (0.01s)
+    --- PASS: Test_Order/TestOrder_ChangeLanguage_Ok (0.01s)
+    --- PASS: Test_Order/TestOrder_ChangeLanguage_OrderIdEmpty_Error (0.01s)
+    --- PASS: Test_Order/TestOrder_ChangeLanguage_ValidationError (0.01s)
+    --- PASS: Test_Order/TestOrder_ChangeOrderCode_ErrorInService (0.01s)
+    --- PASS: Test_Order/TestOrder_ChangeOrderCode_Ok (0.01s)
+    --- PASS: Test_Order/TestOrder_ChangeOrderCode_ServiceError (0.01s)
+    --- PASS: Test_Order/TestOrder_ChangeOrderCode_ValidationError (0.01s)
+    --- PASS: Test_Order/TestOrder_ChangePaymentAccount_BillingServerErrorResult_Error (0.01s)
+    --- PASS: Test_Order/TestOrder_ChangePaymentAccount_BillingServerSystemError (0.01s)
+    --- PASS: Test_Order/TestOrder_ChangePaymentAccount_BindError (0.01s)
+    --- PASS: Test_Order/TestOrder_ChangePaymentAccount_Ok (0.01s)
+    --- PASS: Test_Order/TestOrder_ChangePaymentAccount_OrderIdEmpty_Error (0.01s)
+    --- PASS: Test_Order/TestOrder_ChangePaymentAccount_ValidationError (0.01s)
+    --- PASS: Test_Order/TestOrder_CreateJson_BindError (0.01s)
+    --- PASS: Test_Order/TestOrder_CreateJson_Ok (0.01s)
+    --- PASS: Test_Order/TestOrder_CreateJson_OrderCreateError (0.01s)
+    --- PASS: Test_Order/TestOrder_CreateJson_PaymentFormJsonDataProcessError (0.02s)
+    --- PASS: Test_Order/TestOrder_CreateJson_ProductionEnvironment_Ok (0.01s)
+    --- PASS: Test_Order/TestOrder_CreateJson_ValidationError (0.01s)
+    --- PASS: Test_Order/TestOrder_CreateJson_WithPreparedOrderId_BillingServiceResultError (0.01s)
+    --- PASS: Test_Order/TestOrder_CreateJson_WithPreparedOrderId_BillingServiceSystemError (0.02s)
+    --- PASS: Test_Order/TestOrder_CreateJson_WithPreparedOrderId_Ok (0.02s)
+    --- PASS: Test_Order/TestOrder_CreateJson_WithUser_BillingServerResultFail_Error (0.02s)
+    --- PASS: Test_Order/TestOrder_CreateJson_WithUser_BillingServerSystemError (0.02s)
+    --- PASS: Test_Order/TestOrder_CreateJson_WithUser_EmptyRequestSignature_Error (0.02s)
+    --- PASS: Test_Order/TestOrder_CreateJson_WithUser_Ok (0.01s)
+    --- PASS: Test_Order/TestOrder_CreateRefund_BillingServerError (0.01s)
+    --- PASS: Test_Order/TestOrder_CreateRefund_BillingServer_CreateError (0.01s)
+    --- PASS: Test_Order/TestOrder_CreateRefund_BindError (0.01s)
+    --- PASS: Test_Order/TestOrder_CreateRefund_Ok (0.01s)
+    --- PASS: Test_Order/TestOrder_CreateRefund_ValidationError (0.01s)
+    --- PASS: Test_Order/TestOrder_GetOrderForm_BillingServerSystemError (0.01s)
+    --- PASS: Test_Order/TestOrder_GetOrderForm_Ok (0.01s)
+    --- PASS: Test_Order/TestOrder_GetOrderForm_ParameterIdNotFound_Error (0.01s)
+    --- PASS: Test_Order/TestOrder_GetOrderForm_TokenCookieExist_Ok (0.01s)
+    --- PASS: Test_Order/TestOrder_GetOrders_BillingServerError (0.01s)
+    --- PASS: Test_Order/TestOrder_GetOrders_BindError_Country (0.01s)
+    --- PASS: Test_Order/TestOrder_GetOrders_BindError_Id (0.01s)
+    --- PASS: Test_Order/TestOrder_GetOrders_BindError_PaymentMethod (0.01s)
+    --- PASS: Test_Order/TestOrder_GetOrders_BindError_Project (0.01s)
+    --- PASS: Test_Order/TestOrder_GetOrders_Ok (0.01s)
+    --- PASS: Test_Order/TestOrder_GetRefund_BillingServerError (0.01s)
+    --- PASS: Test_Order/TestOrder_GetRefund_BillingServer_RefundNotFound_Error (0.01s)
+    --- PASS: Test_Order/TestOrder_GetRefund_Ok (0.01s)
+    --- PASS: Test_Order/TestOrder_GetRefund_OrderIdEmpty_Error (0.01s)
+    --- PASS: Test_Order/TestOrder_GetRefund_RefundIdEmpty_Error (0.01s)
+    --- PASS: Test_Order/TestOrder_ListRefunds_BillingServerError (0.01s)
+    --- PASS: Test_Order/TestOrder_ListRefunds_BindError (0.01s)
+    --- PASS: Test_Order/TestOrder_ListRefunds_Ok (0.01s)
+=== RUN   Test_Paylink
+=== RUN   Test_Paylink/TestPaylink_createPaylink_Ok
+=== RUN   Test_Paylink/TestPaylink_deletePaylink_Ok
+=== RUN   Test_Paylink/TestPaylink_getPaylinkStat_Ok
+=== RUN   Test_Paylink/TestPaylink_getPaylinkUrl_Ok
+=== RUN   Test_Paylink/TestPaylink_getPaylink_Ok
+=== RUN   Test_Paylink/TestPaylink_getPaylinksList_Ok
+=== RUN   Test_Paylink/TestPaylink_updatePaylink_Ok
+--- PASS: Test_Paylink (0.09s)
+    --- PASS: Test_Paylink/TestPaylink_createPaylink_Ok (0.01s)
+    --- PASS: Test_Paylink/TestPaylink_deletePaylink_Ok (0.01s)
+    --- PASS: Test_Paylink/TestPaylink_getPaylinkStat_Ok (0.01s)
+    --- PASS: Test_Paylink/TestPaylink_getPaylinkUrl_Ok (0.01s)
+    --- PASS: Test_Paylink/TestPaylink_getPaylink_Ok (0.01s)
+    --- PASS: Test_Paylink/TestPaylink_getPaylinksList_Ok (0.01s)
+    --- PASS: Test_Paylink/TestPaylink_updatePaylink_Ok (0.01s)
+=== RUN   Test_PaymentCost
+=== RUN   Test_PaymentCost/TestPaymentCosts_MoneyBackCostMerchant_Add
+=== RUN   Test_PaymentCost/TestPaymentCosts_MoneyBackCostMerchant_Delete
+=== RUN   Test_PaymentCost/TestPaymentCosts_MoneyBackCostMerchant_Get
+=== RUN   Test_PaymentCost/TestPaymentCosts_MoneyBackCostMerchant_GetAll
+=== RUN   Test_PaymentCost/TestPaymentCosts_MoneyBackCostSystem_Add
+=== RUN   Test_PaymentCost/TestPaymentCosts_MoneyBackCostSystem_Delete
+=== RUN   Test_PaymentCost/TestPaymentCosts_MoneyBackCostSystem_Get
+=== RUN   Test_PaymentCost/TestPaymentCosts_MoneyBackCostSystem_GetAll
+=== RUN   Test_PaymentCost/TestPaymentCosts_PaymentChannelCostMerchant_Add
+=== RUN   Test_PaymentCost/TestPaymentCosts_PaymentChannelCostMerchant_Delete
+=== RUN   Test_PaymentCost/TestPaymentCosts_PaymentChannelCostMerchant_Get
+=== RUN   Test_PaymentCost/TestPaymentCosts_PaymentChannelCostMerchant_GetAll
+=== RUN   Test_PaymentCost/TestPaymentCosts_PaymentChannelCostSystem_Add
+=== RUN   Test_PaymentCost/TestPaymentCosts_PaymentChannelCostSystem_Delete
+=== RUN   Test_PaymentCost/TestPaymentCosts_PaymentChannelCostSystem_Get
+=== RUN   Test_PaymentCost/TestPaymentCosts_PaymentChannelCostSystem_GetAll
+--- PASS: Test_PaymentCost (0.20s)
+    --- PASS: Test_PaymentCost/TestPaymentCosts_MoneyBackCostMerchant_Add (0.01s)
+    --- PASS: Test_PaymentCost/TestPaymentCosts_MoneyBackCostMerchant_Delete (0.01s)
+    --- PASS: Test_PaymentCost/TestPaymentCosts_MoneyBackCostMerchant_Get (0.01s)
+    --- PASS: Test_PaymentCost/TestPaymentCosts_MoneyBackCostMerchant_GetAll (0.01s)
+    --- PASS: Test_PaymentCost/TestPaymentCosts_MoneyBackCostSystem_Add (0.01s)
+    --- PASS: Test_PaymentCost/TestPaymentCosts_MoneyBackCostSystem_Delete (0.01s)
+    --- PASS: Test_PaymentCost/TestPaymentCosts_MoneyBackCostSystem_Get (0.01s)
+    --- PASS: Test_PaymentCost/TestPaymentCosts_MoneyBackCostSystem_GetAll (0.01s)
+    --- PASS: Test_PaymentCost/TestPaymentCosts_PaymentChannelCostMerchant_Add (0.01s)
+    --- PASS: Test_PaymentCost/TestPaymentCosts_PaymentChannelCostMerchant_Delete (0.01s)
+    --- PASS: Test_PaymentCost/TestPaymentCosts_PaymentChannelCostMerchant_Get (0.01s)
+    --- PASS: Test_PaymentCost/TestPaymentCosts_PaymentChannelCostMerchant_GetAll (0.02s)
+    --- PASS: Test_PaymentCost/TestPaymentCosts_PaymentChannelCostSystem_Add (0.01s)
+    --- PASS: Test_PaymentCost/TestPaymentCosts_PaymentChannelCostSystem_Delete (0.01s)
+    --- PASS: Test_PaymentCost/TestPaymentCosts_PaymentChannelCostSystem_Get (0.01s)
+    --- PASS: Test_PaymentCost/TestPaymentCosts_PaymentChannelCostSystem_GetAll (0.01s)
+=== RUN   Test_PaymentMethod
+=== RUN   Test_PaymentMethod/TestPaymentMethod_Error_BillingServer
+=== RUN   Test_PaymentMethod/TestPaymentMethod_createProductionSettings_BindError_RequiredParams
+=== RUN   Test_PaymentMethod/TestPaymentMethod_createProductionSettings_BindError_RequiredPaymentMethodId
+=== RUN   Test_PaymentMethod/TestPaymentMethod_createTestSettings_BindError_RequiredParams
+=== RUN   Test_PaymentMethod/TestPaymentMethod_createTestSettings_BindError_RequiredPaymentMethodId
+=== RUN   Test_PaymentMethod/TestPaymentMethod_create_BindError_Name
+=== RUN   Test_PaymentMethod/TestPaymentMethod_create_BindError_PaymentSystemId
+=== RUN   Test_PaymentMethod/TestPaymentMethod_create_BindError_RequiredName
+=== RUN   Test_PaymentMethod/TestPaymentMethod_create_BindError_RequiredPaymentSystemId
+=== RUN   Test_PaymentMethod/TestPaymentMethod_create_Ok
+=== RUN   Test_PaymentMethod/TestPaymentMethod_getProductionSettings_BindError_RequiredPaymentMethodId
+=== RUN   Test_PaymentMethod/TestPaymentMethod_getProductionSettings_Error_BillingServer
+=== RUN   Test_PaymentMethod/TestPaymentMethod_getProductionSettings_Ok
+=== RUN   Test_PaymentMethod/TestPaymentMethod_getTestSettings_BindError_RequiredPaymentMethodId
+=== RUN   Test_PaymentMethod/TestPaymentMethod_getTestSettings_Error_BillingServer
+=== RUN   Test_PaymentMethod/TestPaymentMethod_getTestSettings_Ok
+=== RUN   Test_PaymentMethod/TestPaymentMethod_updateProductionSettings_BindError_RequiredParams
+=== RUN   Test_PaymentMethod/TestPaymentMethod_updateProductionSettings_BindError_RequiredPaymentMethodId
+=== RUN   Test_PaymentMethod/TestPaymentMethod_updateTestSettings_BindError_RequiredParams
+=== RUN   Test_PaymentMethod/TestPaymentMethod_updateTestSettings_BindError_RequiredPaymentMethodId
+=== RUN   Test_PaymentMethod/TestPaymentMethod_update_Ok
+--- PASS: Test_PaymentMethod (0.26s)
+    --- PASS: Test_PaymentMethod/TestPaymentMethod_Error_BillingServer (0.01s)
+    --- PASS: Test_PaymentMethod/TestPaymentMethod_createProductionSettings_BindError_RequiredParams (0.01s)
+    --- PASS: Test_PaymentMethod/TestPaymentMethod_createProductionSettings_BindError_RequiredPaymentMethodId (0.01s)
+    --- PASS: Test_PaymentMethod/TestPaymentMethod_createTestSettings_BindError_RequiredParams (0.01s)
+    --- PASS: Test_PaymentMethod/TestPaymentMethod_createTestSettings_BindError_RequiredPaymentMethodId (0.01s)
+    --- PASS: Test_PaymentMethod/TestPaymentMethod_create_BindError_Name (0.01s)
+    --- PASS: Test_PaymentMethod/TestPaymentMethod_create_BindError_PaymentSystemId (0.01s)
+    --- PASS: Test_PaymentMethod/TestPaymentMethod_create_BindError_RequiredName (0.01s)
+    --- PASS: Test_PaymentMethod/TestPaymentMethod_create_BindError_RequiredPaymentSystemId (0.01s)
+    --- PASS: Test_PaymentMethod/TestPaymentMethod_create_Ok (0.01s)
+    --- PASS: Test_PaymentMethod/TestPaymentMethod_getProductionSettings_BindError_RequiredPaymentMethodId (0.01s)
+    --- PASS: Test_PaymentMethod/TestPaymentMethod_getProductionSettings_Error_BillingServer (0.01s)
+    --- PASS: Test_PaymentMethod/TestPaymentMethod_getProductionSettings_Ok (0.01s)
+    --- PASS: Test_PaymentMethod/TestPaymentMethod_getTestSettings_BindError_RequiredPaymentMethodId (0.01s)
+    --- PASS: Test_PaymentMethod/TestPaymentMethod_getTestSettings_Error_BillingServer (0.01s)
+    --- PASS: Test_PaymentMethod/TestPaymentMethod_getTestSettings_Ok (0.01s)
+    --- PASS: Test_PaymentMethod/TestPaymentMethod_updateProductionSettings_BindError_RequiredParams (0.01s)
+    --- PASS: Test_PaymentMethod/TestPaymentMethod_updateProductionSettings_BindError_RequiredPaymentMethodId (0.01s)
+    --- PASS: Test_PaymentMethod/TestPaymentMethod_updateTestSettings_BindError_RequiredParams (0.01s)
+    --- PASS: Test_PaymentMethod/TestPaymentMethod_updateTestSettings_BindError_RequiredPaymentMethodId (0.01s)
+    --- PASS: Test_PaymentMethod/TestPaymentMethod_update_Ok (0.01s)
+=== RUN   Test_PayoutDocuments
+=== RUN   Test_PayoutDocuments/TestPayoutDocuments_Ok_createPayoutDocument
+=== RUN   Test_PayoutDocuments/TestPayoutDocuments_Ok_getPayoutDocument
+=== RUN   Test_PayoutDocuments/TestPayoutDocuments_Ok_getPayoutDocumentsList
+=== RUN   Test_PayoutDocuments/TestPayoutDocuments_Ok_updatePayoutDocument
+=== RUN   Test_PayoutDocuments/TestPayoutDocuments_Ok_updatePayoutDocument_NotModified
+--- PASS: Test_PayoutDocuments (0.06s)
+    --- PASS: Test_PayoutDocuments/TestPayoutDocuments_Ok_createPayoutDocument (0.01s)
+    --- PASS: Test_PayoutDocuments/TestPayoutDocuments_Ok_getPayoutDocument (0.01s)
+    --- PASS: Test_PayoutDocuments/TestPayoutDocuments_Ok_getPayoutDocumentsList (0.01s)
+    --- PASS: Test_PayoutDocuments/TestPayoutDocuments_Ok_updatePayoutDocument (0.01s)
+    --- PASS: Test_PayoutDocuments/TestPayoutDocuments_Ok_updatePayoutDocument_NotModified (0.01s)
+=== RUN   Test_PriceGroup
+=== RUN   Test_PriceGroup/TestPaymentMethod_getCurrencyByRegion_BindError_RequiredRegion
+=== RUN   Test_PriceGroup/TestPaymentMethod_getCurrencyByRegion_Error_BillingServer
+=== RUN   Test_PriceGroup/TestPaymentMethod_getCurrencyByRegion_Ok
+=== RUN   Test_PriceGroup/TestPaymentMethod_getCurrencyList_Error_BillingServer
+=== RUN   Test_PriceGroup/TestPaymentMethod_getCurrencyList_Ok
+=== RUN   Test_PriceGroup/TestPaymentMethod_getPriceGroupByCountry_BindError_RequiredCountry
+=== RUN   Test_PriceGroup/TestPaymentMethod_getPriceGroupByCountry_Error_BillingServer
+=== RUN   Test_PriceGroup/TestPaymentMethod_getPriceGroupByCountry_Ok
+=== RUN   Test_PriceGroup/TestPaymentMethod_getRecommendedPrice_BindError_RequiredAmount
+=== RUN   Test_PriceGroup/TestPaymentMethod_getRecommendedPrice_Error_BillingServer
+=== RUN   Test_PriceGroup/TestPaymentMethod_getRecommendedPrice_Ok
+--- PASS: Test_PriceGroup (0.14s)
+    --- PASS: Test_PriceGroup/TestPaymentMethod_getCurrencyByRegion_BindError_RequiredRegion (0.01s)
+    --- PASS: Test_PriceGroup/TestPaymentMethod_getCurrencyByRegion_Error_BillingServer (0.01s)
+    --- PASS: Test_PriceGroup/TestPaymentMethod_getCurrencyByRegion_Ok (0.01s)
+    --- PASS: Test_PriceGroup/TestPaymentMethod_getCurrencyList_Error_BillingServer (0.01s)
+    --- PASS: Test_PriceGroup/TestPaymentMethod_getCurrencyList_Ok (0.01s)
+    --- PASS: Test_PriceGroup/TestPaymentMethod_getPriceGroupByCountry_BindError_RequiredCountry (0.01s)
+    --- PASS: Test_PriceGroup/TestPaymentMethod_getPriceGroupByCountry_Error_BillingServer (0.01s)
+    --- PASS: Test_PriceGroup/TestPaymentMethod_getPriceGroupByCountry_Ok (0.01s)
+    --- PASS: Test_PriceGroup/TestPaymentMethod_getRecommendedPrice_BindError_RequiredAmount (0.01s)
+    --- PASS: Test_PriceGroup/TestPaymentMethod_getRecommendedPrice_Error_BillingServer (0.01s)
+    --- PASS: Test_PriceGroup/TestPaymentMethod_getRecommendedPrice_Ok (0.01s)
+=== RUN   Test_Product
+=== RUN   Test_Product/TestProduct_createProduct_Ok
+=== RUN   Test_Product/TestProduct_deleteProduct_Ok
+=== RUN   Test_Product/TestProduct_getProduct_Ok
+=== RUN   Test_Product/TestProduct_getProductsList_Ok
+=== RUN   Test_Product/TestProduct_updateProduct_Ok
+--- PASS: Test_Product (0.07s)
+    --- PASS: Test_Product/TestProduct_createProduct_Ok (0.01s)
+    --- PASS: Test_Product/TestProduct_deleteProduct_Ok (0.01s)
+    --- PASS: Test_Product/TestProduct_getProduct_Ok (0.01s)
+    --- PASS: Test_Product/TestProduct_getProductsList_Ok (0.01s)
+    --- PASS: Test_Product/TestProduct_updateProduct_Ok (0.01s)
+=== RUN   Test_Project
+=== RUN   Test_Project/TestProject_CreateProject_BillingServerError
+=== RUN   Test_Project/TestProject_CreateProject_BillingServerResultError
+=== RUN   Test_Project/TestProject_CreateProject_BindError
+=== RUN   Test_Project/TestProject_CreateProject_Ok
+=== RUN   Test_Project/TestProject_CreateProject_ValidationError
+=== RUN   Test_Project/TestProject_DeleteProject_BillingServerError
+=== RUN   Test_Project/TestProject_DeleteProject_BillingServerResultError
+=== RUN   Test_Project/TestProject_DeleteProject_Ok
+=== RUN   Test_Project/TestProject_DeleteProject_ValidateError
+=== RUN   Test_Project/TestProject_GetProject_BillingServerError
+=== RUN   Test_Project/TestProject_GetProject_BillingServerResultError
+=== RUN   Test_Project/TestProject_GetProject_Ok
+=== RUN   Test_Project/TestProject_GetProject_ValidationError
+=== RUN   Test_Project/TestProject_ListProjects_BillingServerError
+(*grpc.ListProjectsRequest)(0xc0017d6100)(limit:100 )
+=== RUN   Test_Project/TestProject_ListProjects_BindError
+(*grpc.ListProjectsRequest)(0xc001730200)()
+=== RUN   Test_Project/TestProject_ListProjects_Ok
+(*grpc.ListProjectsRequest)(0xc0015c4e80)(limit:-100 )
+=== RUN   Test_Project/TestProject_ListProjects_ValidationError
+(*grpc.ListProjectsRequest)(0xc000826900)(offset:-100 )
+=== RUN   Test_Project/TestProject_UpdateProject_BillingServerError
+=== RUN   Test_Project/TestProject_UpdateProject_BillingServerResultError
+=== RUN   Test_Project/TestProject_UpdateProject_BindError
+=== RUN   Test_Project/TestProject_UpdateProject_Ok
+=== RUN   Test_Project/TestProject_UpdateProject_ValidationError
+--- PASS: Test_Project (0.27s)
+    --- PASS: Test_Project/TestProject_CreateProject_BillingServerError (0.01s)
+    --- PASS: Test_Project/TestProject_CreateProject_BillingServerResultError (0.01s)
+    --- PASS: Test_Project/TestProject_CreateProject_BindError (0.01s)
+    --- PASS: Test_Project/TestProject_CreateProject_Ok (0.01s)
+    --- PASS: Test_Project/TestProject_CreateProject_ValidationError (0.01s)
+    --- PASS: Test_Project/TestProject_DeleteProject_BillingServerError (0.01s)
+    --- PASS: Test_Project/TestProject_DeleteProject_BillingServerResultError (0.01s)
+    --- PASS: Test_Project/TestProject_DeleteProject_Ok (0.01s)
+    --- PASS: Test_Project/TestProject_DeleteProject_ValidateError (0.01s)
+    --- PASS: Test_Project/TestProject_GetProject_BillingServerError (0.01s)
+    --- PASS: Test_Project/TestProject_GetProject_BillingServerResultError (0.01s)
+    --- PASS: Test_Project/TestProject_GetProject_Ok (0.01s)
+    --- PASS: Test_Project/TestProject_GetProject_ValidationError (0.01s)
+    --- PASS: Test_Project/TestProject_ListProjects_BillingServerError (0.01s)
+    --- PASS: Test_Project/TestProject_ListProjects_BindError (0.01s)
+    --- PASS: Test_Project/TestProject_ListProjects_Ok (0.01s)
+    --- PASS: Test_Project/TestProject_ListProjects_ValidationError (0.01s)
+    --- PASS: Test_Project/TestProject_UpdateProject_BillingServerError (0.01s)
+    --- PASS: Test_Project/TestProject_UpdateProject_BillingServerResultError (0.01s)
+    --- PASS: Test_Project/TestProject_UpdateProject_BindError (0.01s)
+    --- PASS: Test_Project/TestProject_UpdateProject_Ok (0.01s)
+    --- PASS: Test_Project/TestProject_UpdateProject_ValidationError (0.01s)
+=== RUN   Test_ReportFile
+=== RUN   Test_ReportFile/TestReportFile_create_Error_CreateFile
+=== RUN   Test_ReportFile/TestReportFile_create_Ok
+=== RUN   Test_ReportFile/TestReportFile_download_Error_EmptyId
+=== RUN   Test_ReportFile/TestReportFile_download_Error_ValidationFileEmpty
+=== RUN   Test_ReportFile/TestReportFile_download_Error_ValidationFileIncorrect
+=== RUN   Test_ReportFile/TestReportFile_download_Ok
+--- PASS: Test_ReportFile (0.08s)
+    --- PASS: Test_ReportFile/TestReportFile_create_Error_CreateFile (0.01s)
+    --- PASS: Test_ReportFile/TestReportFile_create_Ok (0.01s)
+    --- PASS: Test_ReportFile/TestReportFile_download_Error_EmptyId (0.01s)
+    --- PASS: Test_ReportFile/TestReportFile_download_Error_ValidationFileEmpty (0.01s)
+    --- PASS: Test_ReportFile/TestReportFile_download_Error_ValidationFileIncorrect (0.01s)
+    --- PASS: Test_ReportFile/TestReportFile_download_Ok (0.01s)
+=== RUN   Test_RoyaltyReports
+=== RUN   Test_RoyaltyReports/TestRoyaltyReports_MerchantReviewRoyaltyReport
+=== RUN   Test_RoyaltyReports/TestRoyaltyReports_changeRoyaltyReport
+=== RUN   Test_RoyaltyReports/TestRoyaltyReports_getRoyaltyReport
+=== RUN   Test_RoyaltyReports/TestRoyaltyReports_getRoyaltyReportsList
+=== RUN   Test_RoyaltyReports/TestRoyaltyReports_listRoyaltyReportOrders
+=== RUN   Test_RoyaltyReports/TestRoyaltyReports_merchantDeclineRoyaltyReport
+--- PASS: Test_RoyaltyReports (0.08s)
+    --- PASS: Test_RoyaltyReports/TestRoyaltyReports_MerchantReviewRoyaltyReport (0.01s)
+    --- PASS: Test_RoyaltyReports/TestRoyaltyReports_changeRoyaltyReport (0.01s)
+    --- PASS: Test_RoyaltyReports/TestRoyaltyReports_getRoyaltyReport (0.01s)
+    --- PASS: Test_RoyaltyReports/TestRoyaltyReports_getRoyaltyReportsList (0.01s)
+    --- PASS: Test_RoyaltyReports/TestRoyaltyReports_listRoyaltyReportOrders (0.01s)
+    --- PASS: Test_RoyaltyReports/TestRoyaltyReports_merchantDeclineRoyaltyReport (0.01s)
+=== RUN   Test_Taxes
+=== RUN   Test_Taxes/Test_CreateTax
+=== RUN   Test_Taxes/Test_CreateTaxWithError
+=== RUN   Test_Taxes/Test_DeleteTax
+=== RUN   Test_Taxes/Test_DeleteTaxWithInvalidId
+=== RUN   Test_Taxes/Test_GetRates
+=== RUN   Test_Taxes/Test_GetRatesError
+--- PASS: Test_Taxes (0.11s)
+    --- PASS: Test_Taxes/Test_CreateTax (0.01s)
+    --- PASS: Test_Taxes/Test_CreateTaxWithError (0.01s)
+    --- PASS: Test_Taxes/Test_DeleteTax (0.01s)
+    --- PASS: Test_Taxes/Test_DeleteTaxWithInvalidId (0.02s)
+    --- PASS: Test_Taxes/Test_GetRates (0.03s)
+    --- PASS: Test_Taxes/Test_GetRatesError (0.01s)
+=== RUN   Test_Customer
+=== RUN   Test_Customer/TestToken_CreateToken_BindError
+=== RUN   Test_Customer/TestToken_CreateToken_ChangeCustomer_ResultError
+=== RUN   Test_Customer/TestToken_CreateToken_ChangeCustomer_System_Error
+=== RUN   Test_Customer/TestToken_CreateToken_CheckProjectRequestSignature_ResultError
+=== RUN   Test_Customer/TestToken_CreateToken_CheckProjectRequestSignature_System_Error
+=== RUN   Test_Customer/TestToken_CreateToken_Ok
+=== RUN   Test_Customer/TestToken_CreateToken_ValidationError
+--- PASS: Test_Customer (0.10s)
+    --- PASS: Test_Customer/TestToken_CreateToken_BindError (0.01s)
+    --- PASS: Test_Customer/TestToken_CreateToken_ChangeCustomer_ResultError (0.01s)
+    --- PASS: Test_Customer/TestToken_CreateToken_ChangeCustomer_System_Error (0.01s)
+    --- PASS: Test_Customer/TestToken_CreateToken_CheckProjectRequestSignature_ResultError (0.01s)
+    --- PASS: Test_Customer/TestToken_CreateToken_CheckProjectRequestSignature_System_Error (0.01s)
+    --- PASS: Test_Customer/TestToken_CreateToken_Ok (0.01s)
+    --- PASS: Test_Customer/TestToken_CreateToken_ValidationError (0.01s)
+=== RUN   Test_UserProfile
+=== RUN   Test_UserProfile/TestUserProfile_ConfirmEmail_BillingServerReturnError
+=== RUN   Test_UserProfile/TestUserProfile_ConfirmEmail_BillingServerSystemError
+=== RUN   Test_UserProfile/TestUserProfile_ConfirmEmail_EmptyToken_Error
+=== RUN   Test_UserProfile/TestUserProfile_ConfirmEmail_Ok
+=== RUN   Test_UserProfile/TestUserProfile_CreatePageReview_BillingServerResultError
+=== RUN   Test_UserProfile/TestUserProfile_CreatePageReview_BillingServerSystemError
+=== RUN   Test_UserProfile/TestUserProfile_CreatePageReview_BindError
+=== RUN   Test_UserProfile/TestUserProfile_CreatePageReview_Ok
+=== RUN   Test_UserProfile/TestUserProfile_CreatePageReview_Unauthorized_Error
+=== RUN   Test_UserProfile/TestUserProfile_CreatePageReview_ValidatePageIdError
+=== RUN   Test_UserProfile/TestUserProfile_CreatePageReview_ValidateReviewError
+=== RUN   Test_UserProfile/TestUserProfile_GetUserProfile_BillingServerReturnError
+=== RUN   Test_UserProfile/TestUserProfile_GetUserProfile_BillingServerSystemError
+=== RUN   Test_UserProfile/TestUserProfile_GetUserProfile_Ok
+=== RUN   Test_UserProfile/TestUserProfile_GetUserProfile_ValidationError
+=== RUN   Test_UserProfile/TestUserProfile_SetUserProfile_BillingServerReturnError
+=== RUN   Test_UserProfile/TestUserProfile_SetUserProfile_BillingServerSystemError
+=== RUN   Test_UserProfile/TestUserProfile_SetUserProfile_BindError
+=== RUN   Test_UserProfile/TestUserProfile_SetUserProfile_Ok
+=== RUN   Test_UserProfile/TestUserProfile_SetUserProfile_ValidationAnnualIncomeError
+=== RUN   Test_UserProfile/TestUserProfile_SetUserProfile_ValidationCompanyNameError
+=== RUN   Test_UserProfile/TestUserProfile_SetUserProfile_ValidationError
+=== RUN   Test_UserProfile/TestUserProfile_SetUserProfile_ValidationNumberOfEmployeesError
+=== RUN   Test_UserProfile/TestUserProfile_SetUserProfile_ValidationUserNameError
+=== RUN   Test_UserProfile/TestUserProfile_SetUserProfile_ValidationUserPositionError
+--- PASS: Test_UserProfile (0.31s)
+    --- PASS: Test_UserProfile/TestUserProfile_ConfirmEmail_BillingServerReturnError (0.01s)
+    --- PASS: Test_UserProfile/TestUserProfile_ConfirmEmail_BillingServerSystemError (0.01s)
+    --- PASS: Test_UserProfile/TestUserProfile_ConfirmEmail_EmptyToken_Error (0.01s)
+    --- PASS: Test_UserProfile/TestUserProfile_ConfirmEmail_Ok (0.01s)
+    --- PASS: Test_UserProfile/TestUserProfile_CreatePageReview_BillingServerResultError (0.01s)
+    --- PASS: Test_UserProfile/TestUserProfile_CreatePageReview_BillingServerSystemError (0.01s)
+    --- PASS: Test_UserProfile/TestUserProfile_CreatePageReview_BindError (0.01s)
+    --- PASS: Test_UserProfile/TestUserProfile_CreatePageReview_Ok (0.01s)
+    --- PASS: Test_UserProfile/TestUserProfile_CreatePageReview_Unauthorized_Error (0.01s)
+    --- PASS: Test_UserProfile/TestUserProfile_CreatePageReview_ValidatePageIdError (0.01s)
+    --- PASS: Test_UserProfile/TestUserProfile_CreatePageReview_ValidateReviewError (0.01s)
+    --- PASS: Test_UserProfile/TestUserProfile_GetUserProfile_BillingServerReturnError (0.01s)
+    --- PASS: Test_UserProfile/TestUserProfile_GetUserProfile_BillingServerSystemError (0.01s)
+    --- PASS: Test_UserProfile/TestUserProfile_GetUserProfile_Ok (0.01s)
+    --- PASS: Test_UserProfile/TestUserProfile_GetUserProfile_ValidationError (0.01s)
+    --- PASS: Test_UserProfile/TestUserProfile_SetUserProfile_BillingServerReturnError (0.01s)
+    --- PASS: Test_UserProfile/TestUserProfile_SetUserProfile_BillingServerSystemError (0.01s)
+    --- PASS: Test_UserProfile/TestUserProfile_SetUserProfile_BindError (0.01s)
+    --- PASS: Test_UserProfile/TestUserProfile_SetUserProfile_Ok (0.01s)
+    --- PASS: Test_UserProfile/TestUserProfile_SetUserProfile_ValidationAnnualIncomeError (0.01s)
+    --- PASS: Test_UserProfile/TestUserProfile_SetUserProfile_ValidationCompanyNameError (0.02s)
+    --- PASS: Test_UserProfile/TestUserProfile_SetUserProfile_ValidationError (0.01s)
+    --- PASS: Test_UserProfile/TestUserProfile_SetUserProfile_ValidationNumberOfEmployeesError (0.01s)
+    --- PASS: Test_UserProfile/TestUserProfile_SetUserProfile_ValidationUserNameError (0.01s)
+    --- PASS: Test_UserProfile/TestUserProfile_SetUserProfile_ValidationUserPositionError (0.01s)
+=== RUN   Test_VatReports
+=== RUN   Test_VatReports/TestVatReports_getVatReportTransactions
+=== RUN   Test_VatReports/TestVatReports_getVatReportsDashboard
+=== RUN   Test_VatReports/TestVatReports_getVatReportsForCountry
+=== RUN   Test_VatReports/TestVatReports_updateVatReportStatus
+--- PASS: Test_VatReports (0.06s)
+    --- PASS: Test_VatReports/TestVatReports_getVatReportTransactions (0.01s)
+    --- PASS: Test_VatReports/TestVatReports_getVatReportsDashboard (0.01s)
+    --- PASS: Test_VatReports/TestVatReports_getVatReportsForCountry (0.01s)
+    --- PASS: Test_VatReports/TestVatReports_updateVatReportStatus (0.01s)
+=== RUN   Test_ZipCode
+=== RUN   Test_ZipCode/TestCheckZip_BillingServerError
+=== RUN   Test_ZipCode/TestCheckZip_BindError
+=== RUN   Test_ZipCode/TestCheckZip_Ok
+=== RUN   Test_ZipCode/TestCheckZip_ValidateError
+--- PASS: Test_ZipCode (0.05s)
+    --- PASS: Test_ZipCode/TestCheckZip_BillingServerError (0.01s)
+    --- PASS: Test_ZipCode/TestCheckZip_BindError (0.01s)
+    --- PASS: Test_ZipCode/TestCheckZip_Ok (0.01s)
+    --- PASS: Test_ZipCode/TestCheckZip_ValidateError (0.01s)
+PASS
+ok  	github.com/paysuper/paysuper-management-api/internal/handlers	8.122s
+?   	github.com/paysuper/paysuper-management-api/internal/mock	[no test files]
+?   	github.com/paysuper/paysuper-management-api/internal/test	[no test files]
+?   	github.com/paysuper/paysuper-management-api/internal/validators	[no test files]
+?   	github.com/paysuper/paysuper-management-api/pkg/http	[no test files]
+?   	github.com/paysuper/paysuper-management-api/pkg/micro	[no test files]

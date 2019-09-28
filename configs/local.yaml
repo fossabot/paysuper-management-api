@@ -1,0 +1,20 @@
+metric:
+  disabled: true
+tracing:
+  disabled: true
+micro:
+  selector: static
+  name: p1payapi
+dispatcher:
+  global:
+    returnPaymentForm: true
+    paymentFormJsLibraryUrl: "unknown"
+    clientId: "unknown"
+    clientSecret: "unknown"
+    redirectUrl: "unknown"
+    awsAccessKeyIdAgreement: "unknown"
+    awsSecretAccessKeyAgreement: "unknown"
+    awsBucketAgreement: "unknown"
+    awsAccessKeyIdReporter: "unknown"
+    awsSecretAccessKeyReporter: "unknown"
+    awsBucketReporter: "unknown"

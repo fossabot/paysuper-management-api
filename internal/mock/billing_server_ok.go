@@ -41,10 +41,14 @@ func (s *BillingServerOkMock) PaymentFormJsonDataProcess(
 	in *grpc.PaymentFormJsonDataRequest,
 	opts ...client.CallOption,
 ) (*grpc.PaymentFormJsonDataResponse, error) {
+	cookie := in.Cookie
+	if cookie == "" {
+		cookie = bson.NewObjectId().Hex()
+	}
 	return &grpc.PaymentFormJsonDataResponse{
 		Status: pkg.ResponseStatusOk,
 		Item: &grpc.PaymentFormJsonData{
-			Cookie: bson.NewObjectId().Hex(),
+			Cookie: cookie,
 		},
 	}, nil
 }

@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  p1pay-api-mongo:
+    image: mongo:4.2-rc
+    restart: unless-stopped
+    networks:
+      - default
+networks:
+  default:
+    name: ${DOCKER_NETWORK}
+    external: true
