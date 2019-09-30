@@ -3,8 +3,8 @@ package handlers
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/Nerufa/go-shared/logger"
-	"github.com/Nerufa/go-shared/provider"
+	"github.com/ProtocolONE/go-core/logger"
+	"github.com/ProtocolONE/go-core/provider"
 	"github.com/labstack/echo/v4"
 	awsWrapper "github.com/paysuper/paysuper-aws-manager"
 	"github.com/paysuper/paysuper-management-api/internal/dispatcher/common"

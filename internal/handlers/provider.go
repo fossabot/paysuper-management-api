@@ -1,8 +1,8 @@
 package handlers
 
 import (
-	"github.com/Nerufa/go-shared/config"
-	"github.com/Nerufa/go-shared/provider"
+	"github.com/ProtocolONE/go-core/config"
+	"github.com/ProtocolONE/go-core/provider"
 	awsWrapper "github.com/paysuper/paysuper-aws-manager"
 	"github.com/paysuper/paysuper-management-api/internal/dispatcher/common"
 	"gopkg.in/go-playground/validator.v9"

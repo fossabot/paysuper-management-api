@@ -2,9 +2,9 @@ module github.com/paysuper/paysuper-management-api
 
 require (
 	github.com/Jeffail/gabs v1.1.1 // indirect
-	github.com/Nerufa/go-shared v1.9.0
 	github.com/ProtocolONE/authone-jwt-verifier-golang v0.0.0-20190327070329-4dd563b01681
 	github.com/ProtocolONE/geoip-service v0.0.0-20190903084234-1d5ae6b96679
+	github.com/ProtocolONE/go-core v1.9.0
 	github.com/SAP/go-hdb v0.13.2 // indirect
 	github.com/SebastiaanKlippert/go-wkhtmltopdf v1.4.1
 	github.com/SermoDigital/jose v0.9.2-0.20161205224733-f6df55f235c2 // indirect

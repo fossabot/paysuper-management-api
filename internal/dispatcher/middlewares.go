@@ -3,7 +3,7 @@ package dispatcher
 import (
 	"bytes"
 	"fmt"
-	"github.com/Nerufa/go-shared/logger"
+	"github.com/ProtocolONE/go-core/logger"
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
 	"github.com/paysuper/paysuper-management-api/internal/dispatcher/common"

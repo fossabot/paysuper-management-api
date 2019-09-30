@@ -3,9 +3,9 @@ package handlers
 import (
 	"bytes"
 	"fmt"
-	"github.com/Nerufa/go-shared/config"
-	"github.com/Nerufa/go-shared/logger"
-	"github.com/Nerufa/go-shared/provider"
+	"github.com/ProtocolONE/go-core/config"
+	"github.com/ProtocolONE/go-core/logger"
+	"github.com/ProtocolONE/go-core/provider"
 	"github.com/SebastiaanKlippert/go-wkhtmltopdf"
 	"github.com/globalsign/mgo/bson"
 	"github.com/labstack/echo/v4"

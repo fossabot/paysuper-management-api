@@ -4,12 +4,12 @@ package test
 
 import (
 	"context"
-	"github.com/Nerufa/go-shared/config"
-	"github.com/Nerufa/go-shared/invoker"
-	"github.com/Nerufa/go-shared/logger"
-	"github.com/Nerufa/go-shared/metric"
-	"github.com/Nerufa/go-shared/provider"
-	"github.com/Nerufa/go-shared/tracing"
+	"github.com/ProtocolONE/go-core/config"
+	"github.com/ProtocolONE/go-core/invoker"
+	"github.com/ProtocolONE/go-core/logger"
+	"github.com/ProtocolONE/go-core/metric"
+	"github.com/ProtocolONE/go-core/provider"
+	"github.com/ProtocolONE/go-core/tracing"
 	"github.com/google/wire"
 	"github.com/paysuper/paysuper-management-api/internal/dispatcher"
 	"github.com/paysuper/paysuper-management-api/internal/dispatcher/common"

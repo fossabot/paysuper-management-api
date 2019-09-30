@@ -2,7 +2,7 @@ package http
 
 import (
 	"context"
-	"github.com/Nerufa/go-shared/entrypoint"
+	"github.com/ProtocolONE/go-core/entrypoint"
 	_ "github.com/micro/go-plugins/broker/rabbitmq"
 	_ "github.com/micro/go-plugins/registry/kubernetes"
 	_ "github.com/micro/go-plugins/transport/grpc"
@@ -29,9 +29,6 @@ var (
 					c()
 				}
 			}()
-
-			s, c, e = daemon.BuildHTTP(context.Background(), cmd.Slave.Initial(), cmd.Observer)
-
 			cmd.Slave.Executor(func(ctx context.Context) error {
 				initial, _ := entrypoint.CtxExtractInitial(ctx)
 				s, c, e = daemon.BuildHTTP(ctx, initial, cmd.Observer)

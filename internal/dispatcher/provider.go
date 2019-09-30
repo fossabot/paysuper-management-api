@@ -2,9 +2,9 @@ package dispatcher
 
 import (
 	"context"
-	"github.com/Nerufa/go-shared/config"
-	"github.com/Nerufa/go-shared/invoker"
-	"github.com/Nerufa/go-shared/provider"
+	"github.com/ProtocolONE/go-core/config"
+	"github.com/ProtocolONE/go-core/invoker"
+	"github.com/ProtocolONE/go-core/provider"
 	jwtverifier "github.com/ProtocolONE/authone-jwt-verifier-golang"
 	geoip "github.com/ProtocolONE/geoip-service/pkg"
 	"github.com/ProtocolONE/geoip-service/pkg/proto"

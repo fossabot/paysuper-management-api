@@ -2,9 +2,9 @@ package http
 
 import (
 	"context"
-	"github.com/Nerufa/go-shared/invoker"
-	"github.com/Nerufa/go-shared/logger"
-	"github.com/Nerufa/go-shared/provider"
+	"github.com/ProtocolONE/go-core/invoker"
+	"github.com/ProtocolONE/go-core/logger"
+	"github.com/ProtocolONE/go-core/provider"
 	"github.com/labstack/echo/v4"
 	"net/http"
 )
@@ -25,7 +25,9 @@ func (h *HTTP) ListenAndServe() (err error) {
 	server.HidePort = true
 	server.Debug = h.cfg.Debug
 
-	h.dispatcher.Dispatch(server)
+	if err := h.dispatcher.Dispatch(server); err != nil {
+		return err
+	}
 
 	h.L().Info("start listen and serve http at %v", logger.Args(h.cfg.Bind))
 

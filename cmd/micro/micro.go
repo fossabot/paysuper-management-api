@@ -2,7 +2,7 @@ package micro
 
 import (
 	"context"
-	"github.com/Nerufa/go-shared/entrypoint"
+	"github.com/ProtocolONE/go-core/entrypoint"
 	_ "github.com/micro/go-plugins/broker/rabbitmq"
 	_ "github.com/micro/go-plugins/registry/kubernetes"
 	_ "github.com/micro/go-plugins/transport/grpc"

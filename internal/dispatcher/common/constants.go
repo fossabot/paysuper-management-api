@@ -1,7 +1,7 @@
 package common
 
 import (
-	"github.com/Nerufa/go-shared/logger"
+	"github.com/ProtocolONE/go-core/logger"
 	"github.com/paysuper/paysuper-billing-server/pkg"
 	"regexp"
 )

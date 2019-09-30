@@ -1,7 +1,7 @@
 package common
 
 import (
-	"github.com/Nerufa/go-shared/provider"
+	"github.com/ProtocolONE/go-core/provider"
 	"github.com/ProtocolONE/geoip-service/pkg/proto"
 	"github.com/labstack/echo/v4"
 	"github.com/paysuper/paysuper-billing-server/pkg/proto/grpc"
