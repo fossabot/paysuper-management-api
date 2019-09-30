@@ -30,7 +30,8 @@ jobs:
   - stage: test
     install: true
     script:
-    - go test ./... -coverprofile=coverage.out -covermode=atomic -p=1
+    #- go test ./... -coverprofile=coverage.out -covermode=atomic -p=1
+    - make github-test
     - sonar-scanner
     after_success:
     - bash <(curl -s https://codecov.io/bash)
