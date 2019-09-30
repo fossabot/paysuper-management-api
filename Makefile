@@ -182,8 +182,8 @@ test-with-coverage: init ## test application with race and total coverage
 		$(call build_resources) ;\
 		export WD=$(ROOT_DIR)/.artifacts ;\
         GO111MODULE=on CGO_ENABLED=1 \
-        go test -mod vendor -v -race -covermode atomic -coverprofile profile.out ${TEST_ARGS} ./... || exit 1 ;\
-        go tool cover -func=profile.out && rm -rf profile.out ;\
+        go test -mod vendor -v -race -covermode atomic -coverprofile coverage.out ${TEST_ARGS} ./... || exit 1 ;\
+        go tool cover -func=coverage.out ;\
     fi;
 .PHONY: test-with-coverage
 

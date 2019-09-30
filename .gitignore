@@ -13,3 +13,5 @@ vendor
 .tmp/
 
 /internal/config/parameters/parameters.yml
+
+coverage.out
