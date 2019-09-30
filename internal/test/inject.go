@@ -44,7 +44,11 @@ func ProviderTestSet(initial config.Initial, awareSet provider.AwareSet, srv com
 
 // ProviderTestInitial
 func ProviderTestInitial() config.Initial {
-	return config.Initial{WorkDir: os.Getenv("WD")}
+	wd := os.Getenv("WD")
+	if len(wd) == 0 {
+		wd = "../../.artifacts"
+	}
+	return config.Initial{WorkDir: wd}
 }
 
 // BuildTestSet
