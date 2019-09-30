@@ -28,6 +28,9 @@ before_install:
 jobs:
   include:
   - stage: test
+    cache:
+      directories:
+      - $HOME/gopath/pkg/mod
     install: true
     script:
     #- go test ./... -coverprofile=coverage.out -covermode=atomic -p=1
