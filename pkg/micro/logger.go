@@ -2,7 +2,7 @@ package micro
 
 import (
 	"fmt"
-	"github.com/Nerufa/go-shared/logger"
+	"github.com/ProtocolONE/go-core/logger"
 	logIface "github.com/go-log/log"
 )
 

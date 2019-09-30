@@ -2,9 +2,9 @@ package micro
 
 import (
 	"context"
-	"github.com/Nerufa/go-shared/invoker"
-	"github.com/Nerufa/go-shared/logger"
-	"github.com/Nerufa/go-shared/provider"
+	"github.com/ProtocolONE/go-core/invoker"
+	"github.com/ProtocolONE/go-core/logger"
+	"github.com/ProtocolONE/go-core/provider"
 	"github.com/micro/go-micro"
 	"github.com/micro/go-micro/client"
 	mlog "github.com/micro/go-micro/util/log"

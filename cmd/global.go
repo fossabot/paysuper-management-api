@@ -1,8 +1,8 @@
 package cmd
 
 import (
-	"github.com/Nerufa/go-shared/entrypoint"
-	"github.com/Nerufa/go-shared/invoker"
+	"github.com/ProtocolONE/go-core/entrypoint"
+	"github.com/ProtocolONE/go-core/invoker"
 )
 
 var (

@@ -1,8 +1,8 @@
 package handlers
 
 import (
-	"github.com/Nerufa/go-shared/logger"
-	"github.com/Nerufa/go-shared/provider"
+	"github.com/ProtocolONE/go-core/logger"
+	"github.com/ProtocolONE/go-core/provider"
 	"github.com/labstack/echo/v4"
 	"github.com/paysuper/paysuper-management-api/internal/dispatcher/common"
 	"github.com/paysuper/paysuper-tax-service/proto"
