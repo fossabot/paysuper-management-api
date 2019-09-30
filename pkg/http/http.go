@@ -25,7 +25,9 @@ func (h *HTTP) ListenAndServe() (err error) {
 	server.HidePort = true
 	server.Debug = h.cfg.Debug
 
-	h.dispatcher.Dispatch(server)
+	if err := h.dispatcher.Dispatch(server); err != nil {
+		return err
+	}
 
 	h.L().Info("start listen and serve http at %v", logger.Args(h.cfg.Bind))
 
