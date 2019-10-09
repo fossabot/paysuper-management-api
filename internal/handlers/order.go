@@ -37,9 +37,13 @@ const (
 	errorTemplateName      = "error.html"
 )
 
+// swagger:model CreateOrderJsonProjectResponse
 type CreateOrderJsonProjectResponse struct {
-	Id              string                    `json:"id"`
-	PaymentFormUrl  string                    `json:"payment_form_url"`
+	// Order unique identifier.
+	Id string `json:"id"`
+	//description TODO
+	PaymentFormUrl string `json:"payment_form_url"`
+	//description TODO
 	PaymentFormData *grpc.PaymentFormJsonData `json:"payment_form_data,omitempty"`
 }
 
@@ -93,25 +97,130 @@ func NewOrderRoute(set common.HandlerSet, cfg *common.Config) *OrderRoute {
 
 func (h *OrderRoute) Route(groups *common.Groups) {
 
+	// swagger:operation GET /order/{id} Order orderIdPathGetOrderForm
+	// ---
+	// summary: TODO.
+	// description: TODO.
 	groups.Common.GET(orderIdPath, h.getOrderForm)
-	groups.Common.GET(paylinkIdPath, h.getOrderForPaylink)       // TODO: Need a test
-	groups.Common.GET(orderCreatePath, h.createFromFormData)     // TODO: Need a test
-	groups.Common.POST(orderCreatePath, h.createFromFormData)    // TODO: Need a test
-	groups.AuthProject.POST(orderPath, h.createJson)             // TODO: Need a test
+
+	// swagger:operation GET /paylink/{id} Order paylinkIdPathGetOrderForPaylink
+	// ---
+	// summary: TODO.
+	// description: TODO.
+	groups.Common.GET(paylinkIdPath, h.getOrderForPaylink) // TODO: Need a test
+
+	// swagger:operation GET /order/create Order orderCreatePathCreateFromFormData
+	// ---
+	// summary: TODO.
+	// description: TODO.
+	groups.Common.GET(orderCreatePath, h.createFromFormData) // TODO: Need a test
+
+	// swagger:operation POST /order/create Order orderCreatePathCreateFromFormData
+	// ---
+	// summary: TODO.
+	// description: TODO.
+	groups.Common.POST(orderCreatePath, h.createFromFormData) // TODO: Need a test
+
+	// swagger:operation POST /api/v1/order Order orderPathCreateJson
+	// ---
+	// summary: Create a payment order with parameters of products.
+	// description: Create a payment order.
+	// consumes:
+	// - application/json
+	// produces:
+	// - application/json
+	// parameters:
+	// - name: data
+	//   in: body
+	//   description: TODO
+	//   required: true
+	//   schema:
+	//     $ref: '#/definitions/BillingServer_OrderCreateRequest'
+	// responses:
+	//   200:
+	//     description: Object which contain data to render payment form.
+	//     schema:
+	//       $ref: '#/definitions/CreateOrderJsonProjectResponse'
+	//   400:
+	//     description: Object with error message.
+	//     schema:
+	//       $ref: '#/definitions/BillingSever_ResponseError'
+	//   500:
+	//     description: Object with error message.
+	//     schema:
+	//       $ref: '#/definitions/BillingSever_ResponseError'
+	groups.AuthProject.POST(orderPath, h.createJson) // TODO: Need a test
+
+	// swagger:operation POST /api/v1/payment Order paymentPathProcessCreatePayment
+	// ---
+	// summary: TODO.
+	// description: TODO.
 	groups.AuthProject.POST(paymentPath, h.processCreatePayment) // TODO: Need a test
 
+	// swagger:operation GET /admin/api/v1/order Order orderPathListOrdersPublic
+	// ---
+	// summary: TODO.
+	// description: TODO.
 	groups.AuthUser.GET(orderPath, h.listOrdersPublic)
+
+	// swagger:operation GET /admin/api/v1/order/{id} Order orderIdPathGetOrderPublic
+	// ---
+	// summary: TODO.
+	// description: TODO.
 	groups.AuthUser.GET(orderIdPath, h.getOrderPublic) // TODO: Need a test
 
+	// swagger:operation GET /admin/api/v1/order/{order_id}/refunds Order orderRefundsPathListRefunds
+	// ---
+	// summary: TODO.
+	// description: TODO.
 	groups.AuthUser.GET(orderRefundsPath, h.listRefunds)
+
+	// swagger:operation GET /admin/api/v1/order/{order_id}/refunds/{refund_id} Order orderRefundsIdsPathGetRefund
+	// ---
+	// summary: TODO.
+	// description: TODO.
 	groups.AuthUser.GET(orderRefundsIdsPath, h.getRefund)
+
+	// swagger:operation POST /admin/api/v1/order/{order_id}/refunds Order orderRefundsPathCreateRefund
+	// ---
+	// summary: TODO.
+	// description: TODO.
 	groups.AuthUser.POST(orderRefundsPath, h.createRefund)
+
+	// swagger:operation PUT /admin/api/v1/order/{order_id}/replace_code Order orderReplaceCodePathReplaceCode
+	// ---
+	// summary: TODO.
+	// description: TODO.
 	groups.AuthUser.PUT(orderReplaceCodePath, h.replaceCode)
 
+	// swagger:operation PATCH /api/v1/orders/{order_id}/language Order orderLanguagePathChangeLanguage
+	// ---
+	// summary: TODO.
+	// description: TODO.
 	groups.AuthProject.PATCH(orderLanguagePath, h.changeLanguage)
+
+	// swagger:operation PATCH /api/v1/orders/{order_id}/customer Order orderCustomerPathChangeCustomer
+	// ---
+	// summary: TODO.
+	// description: TODO.
 	groups.AuthProject.PATCH(orderCustomerPath, h.changeCustomer)
+
+	// swagger:operation POST /api/v1/orders/{order_id}/billing_address Order orderBillingAddressPathProcessBillingAddress
+	// ---
+	// summary: TODO.
+	// description: TODO.
 	groups.AuthProject.POST(orderBillingAddressPath, h.processBillingAddress)
+
+	// swagger:operation POST /api/v1/orders/{order_id}/notify_sale Order orderNotifySalesPathNotifySale
+	// ---
+	// summary: TODO.
+	// description: TODO.
 	groups.AuthProject.POST(orderNotifySalesPath, h.notifySale)
+
+	// swagger:operation POST /api/v1/orders/{order_id}/notify_new_region Order orderNotifyNewRegionPathNotifyNewRegion
+	// ---
+	// summary: TODO.
+	// description: TODO.
 	groups.AuthProject.POST(orderNotifyNewRegionPath, h.notifyNewRegion)
 }
 

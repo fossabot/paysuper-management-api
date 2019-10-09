@@ -1,3 +1,7 @@
+// schemes: https
+// host: p1payapi.tst.protocol.one
+// version: 1.0.0
+// swagger:meta
 package main
 
 import (
