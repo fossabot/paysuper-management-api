@@ -888,3 +888,7 @@ func (s *BillingServerOkTemporaryMock) CheckSkuAndKeyProject(ctx context.Context
 func (s *BillingServerOkTemporaryMock) GetPriceGroupByRegion(ctx context.Context, in *grpc.GetPriceGroupByRegionRequest, opts ...client.CallOption) (*grpc.GetPriceGroupByRegionResponse, error) {
 	panic("implement me")
 }
+
+func (s *BillingServerOkTemporaryMock) GetMerchantUsers(ctx context.Context, in *grpc.GetMerchantUsersRequest, opts ...client.CallOption) (*grpc.GetMerchantUsersResponse, error) {
+	panic("implement me")
+}

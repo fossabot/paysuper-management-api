@@ -828,3 +828,7 @@ func (s *BillingServerSystemErrorMock) CheckSkuAndKeyProject(ctx context.Context
 func (s *BillingServerSystemErrorMock) GetPriceGroupByRegion(ctx context.Context, in *grpc.GetPriceGroupByRegionRequest, opts ...client.CallOption) (*grpc.GetPriceGroupByRegionResponse, error) {
 	panic("implement me")
 }
+
+func (s *BillingServerSystemErrorMock) GetMerchantUsers(ctx context.Context, in *grpc.GetMerchantUsersRequest, opts ...client.CallOption) (*grpc.GetMerchantUsersResponse, error) {
+	panic("implement me")
+}

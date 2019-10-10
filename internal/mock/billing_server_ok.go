@@ -1163,3 +1163,12 @@ func (s *BillingServerOkMock) GetPriceGroupByRegion(ctx context.Context, in *grp
 		},
 	}, nil
 }
+
+func (s *BillingServerOkMock) GetMerchantUsers(ctx context.Context, in *grpc.GetMerchantUsersRequest, opts ...client.CallOption) (*grpc.GetMerchantUsersResponse, error) {
+	return &grpc.GetMerchantUsersResponse{
+		Status: 200,
+		Users: []*billing.UserRoleMerchant{
+			{MerchantId: in.MerchantId, Id:SomeMerchantId},
+		},
+	}, nil
+}
