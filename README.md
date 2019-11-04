@@ -5,6 +5,7 @@ PaySuper Management API
 [![Build Status](https://travis-ci.org/paysuper/paysuper-management-api.svg?branch=master)](https://travis-ci.org/paysuper/paysuper-management-api)
 [![codecov](https://codecov.io/gh/paysuper/paysuper-management-api/branch/master/graph/badge.svg)](https://codecov.io/gh/paysuper/paysuper-management-api)
 [![Go Report Card](https://goreportcard.com/badge/github.com/paysuper/paysuper-management-api)](https://goreportcard.com/report/github.com/paysuper/paysuper-management-api)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fpaysuper%2Fpaysuper-management-api.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fpaysuper%2Fpaysuper-management-api?ref=badge_shield)
 
 PaySuper is a unique, simple payment toolkit designed to make developers self-reliant. It’s an open-source payment service 
 with a highly customizable payment form, an intuitive API, and comprehensible, eye-catching reports.
@@ -36,3 +37,7 @@ PaySuper welcomes contributions from anyone and everyone. Please refer to each p
 The master branch of this repository contains the latest stable release of this component.
 
  
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fpaysuper%2Fpaysuper-management-api.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fpaysuper%2Fpaysuper-management-api?ref=badge_large)
